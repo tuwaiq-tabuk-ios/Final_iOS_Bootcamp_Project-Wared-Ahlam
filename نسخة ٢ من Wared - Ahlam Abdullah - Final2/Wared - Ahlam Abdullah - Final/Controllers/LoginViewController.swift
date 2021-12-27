@@ -15,12 +15,11 @@ class LoginViewController: UIViewController {
   @IBOutlet weak var loginButton: UIButton!
   @IBOutlet weak var errorLabel: UILabel!
   
-  
   override func viewDidLoad() {
-    
     super.viewDidLoad()
     setUpElements()
   }
+  
   
   func setUpElements() {
     // Hide the error label

@@ -6,7 +6,7 @@
 //
 import UIKit
 
-class AgeVC: UIViewController {
+class SelectAgeVC: UIViewController {
   
   // Age of 18.
 
@@ -16,10 +16,10 @@ class AgeVC: UIViewController {
   let MAXIMUM_AGE: Date = Calendar.current.date(byAdding: .year, value: -65, to: Date())!;
   
   
-  @IBAction func goBack(_ sender: Any) {
-    dismiss(animated: true, completion: nil)
-  }
-  
+//  @IBAction func goBack(_ sender: Any) {
+//    dismiss(animated: true, completion: nil)
+//  }
+//  
   @IBOutlet weak var datePicker: UIDatePicker!
   
   
@@ -69,7 +69,7 @@ class AgeVC: UIViewController {
   
   func transitionToHome() {
     
-    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "NextCity")
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "bloodTypeCV")
     present(homeViewController!, animated: true, completion: nil)
     
   }

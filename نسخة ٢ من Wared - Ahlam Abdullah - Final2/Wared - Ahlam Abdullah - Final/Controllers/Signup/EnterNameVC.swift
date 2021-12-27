@@ -9,13 +9,13 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class ThenameVC
+class EnterNameVC
 : UIViewController {
   
   @IBOutlet weak var firstNameTextField: UITextField!
   @IBOutlet weak var lastNameTextField: UITextField!
   @IBOutlet weak var signUpButton: UIButton!
-  @IBOutlet weak var errorLabel: UILabel!
+//  @IBOutlet weak var errorLabel: UILabel!
   
   
   override func viewDidLoad() {
@@ -24,13 +24,13 @@ class ThenameVC
   }
   
   
-  @IBAction func backButtin(_ sender: Any){
-    dismiss(animated: true, completion: nil)
-  }
+//  @IBAction func backButtin(_ sender: Any){
+//    dismiss(animated: true, completion: nil)
+//  }
   func setUpElements() {
     
     // Hide the error label
-    errorLabel.alpha = 0
+//    errorLabel.alpha = 0
     
     Utilities.styleTextField(firstNameTextField)
     Utilities.styleTextField(lastNameTextField)
@@ -76,17 +76,17 @@ class ThenameVC
       
     }
     
-    
+
     func showError(_ message:String) {
-      
-      
-      errorLabel.text = message
-      errorLabel.alpha = 1
+
+
+//      errorLabel.text = message
+//      errorLabel.alpha = 1
     }
   }
   func transitionToHome() {
     
-    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "NextVC")
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "SelectYourAgeVC")
     present(homeViewController!, animated: true, completion: nil)
     
   }

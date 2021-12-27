@@ -9,7 +9,6 @@ import UIKit
 
 class ViewController: UIViewController {
   
-  
   @IBOutlet weak var signUpButton: UIButton!
   @IBOutlet weak var loginButton: UIButton!
   
@@ -32,6 +31,7 @@ class ViewController: UIViewController {
     Utilities.styleFilledButton(signUpButton)
     Utilities.styleHollowButton(loginButton)
   }
+  
 }
 
 

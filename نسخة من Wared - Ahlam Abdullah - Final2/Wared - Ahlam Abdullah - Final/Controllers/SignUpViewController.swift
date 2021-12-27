@@ -97,14 +97,14 @@ class SignUpViewController: UIViewController {
     errorLabel.alpha = 1
     
   }
-  
+
   func transitionToHome() {
     
-    let homeViewController = storyboard?.instantiateViewController(identifier: Constants.Storyboard.homeViewControlle)
-    view.window?.rootViewController = homeViewController
-    view.window?.makeKeyAndVisible()
+   
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "ContnueVC")
+    present(homeViewController!, animated: true, completion: nil)
+   
     
   }
   
 }
-

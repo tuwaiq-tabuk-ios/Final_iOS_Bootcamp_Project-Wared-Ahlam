@@ -11,15 +11,22 @@ import Firebase
 
 class SelectWeightVC: UIViewController {
   
+  var data: SignupDataModel!
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
+  
   @IBAction func didSelectWeight(_ sender: UIButton) {
       guard let weight = sender.currentTitle, !weight.isEmpty else { return }
+//      data.weight = weight
   }
   
+  @IBAction func registerButton(_ sender: Any) {
+    
+    transitionToHome()
+  }
   
   func transitionToHome() {
       
@@ -28,6 +35,6 @@ class SelectWeightVC: UIViewController {
       view.window?.rootViewController = homeViewController
       view.window?.makeKeyAndVisible()
       
-  }
-  
+}
+
 }

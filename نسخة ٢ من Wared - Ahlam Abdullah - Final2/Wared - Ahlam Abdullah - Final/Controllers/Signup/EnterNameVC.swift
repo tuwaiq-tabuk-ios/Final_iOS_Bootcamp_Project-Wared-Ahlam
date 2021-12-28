@@ -34,7 +34,7 @@ class EnterNameVC
     
     Utilities.styleTextField(firstNameTextField)
     Utilities.styleTextField(lastNameTextField)
-    Utilities.styleFilledButton(signUpButton)
+//    Utilities.styleFilledButton(signUpButton)
   }
   
   func validateFields() -> String? {

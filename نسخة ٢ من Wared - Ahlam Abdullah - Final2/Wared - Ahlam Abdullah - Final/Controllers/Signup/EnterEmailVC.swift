@@ -26,7 +26,7 @@ class EnterEmailVC: UIViewController {
     
     Utilities.styleTextField(emailTextField)
     Utilities.styleTextField(passwordTextField)
-    Utilities.styleFilledButton(contnueButton)
+//    Utilities.styleFilledButton(contnueButton)
     
   }
   

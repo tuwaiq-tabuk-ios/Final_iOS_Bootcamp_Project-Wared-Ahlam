@@ -69,7 +69,7 @@ class SelectAgeVC: UIViewController {
   
   func transitionToHome() {
     
-    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "bloodTypeCV")
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "EnterYourCityVC")
     present(homeViewController!, animated: true, completion: nil)
     
   }

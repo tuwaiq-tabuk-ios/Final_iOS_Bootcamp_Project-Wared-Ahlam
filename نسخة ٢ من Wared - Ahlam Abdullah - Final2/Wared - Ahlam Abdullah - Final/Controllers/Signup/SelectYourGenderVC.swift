@@ -25,5 +25,4 @@ class SelectYourGenderVC: UIViewController {
     present(homeViewController!, animated: true, completion: nil)
 //    vc.data = data
   }
-  
 }

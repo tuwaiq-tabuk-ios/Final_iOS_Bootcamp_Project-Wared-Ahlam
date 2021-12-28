@@ -20,7 +20,6 @@ class LoginViewController: UIViewController {
     setUpElements()
   }
   
-  
   func setUpElements() {
     // Hide the error label
     errorLabel.alpha = 0
@@ -29,7 +28,6 @@ class LoginViewController: UIViewController {
     Utilities.styleTextField(emailTextField)
     Utilities.styleTextField(passwordTextField)
     Utilities.styleFilledButton(loginButton)
-    
   }
   
   @IBAction func loginTapped(_ sender: Any) {

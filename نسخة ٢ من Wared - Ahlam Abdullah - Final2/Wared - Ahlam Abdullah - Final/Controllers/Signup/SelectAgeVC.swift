@@ -7,7 +7,6 @@
 import UIKit
 
 class SelectAgeVC: UIViewController {
-  
   // Age of 18.
 
   let MINIMUM_AGE: Date = Calendar.current.date(byAdding: .year, value: -18, to: Date())!;
@@ -15,11 +14,10 @@ class SelectAgeVC: UIViewController {
   // Age of 65.
   let MAXIMUM_AGE: Date = Calendar.current.date(byAdding: .year, value: -65, to: Date())!;
   
+  @IBAction func backButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
   
-//  @IBAction func goBack(_ sender: Any) {
-//    dismiss(animated: true, completion: nil)
-//  }
-//  
   @IBOutlet weak var datePicker: UIDatePicker!
   
   

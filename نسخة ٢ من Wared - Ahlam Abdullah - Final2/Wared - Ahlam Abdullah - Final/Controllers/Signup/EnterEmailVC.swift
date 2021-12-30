@@ -69,7 +69,7 @@ class EnterEmailVC: UIViewController {
       Auth.auth().createUser(withEmail: email, password: password) { [self] (result, err) in
         // Check for errors
         if err != nil {
-          
+    
         }else {
           // User was created successfully, now store the first name and last name
           let db = Firestore.firestore()
@@ -94,5 +94,4 @@ class EnterEmailVC: UIViewController {
    
     
   }
-  
 }

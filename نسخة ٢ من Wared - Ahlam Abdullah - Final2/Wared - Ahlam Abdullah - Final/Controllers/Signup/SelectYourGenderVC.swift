@@ -17,6 +17,11 @@ class SelectYourGenderVC: UIViewController {
     // Do any additional setup after loading the view.
   }
   
+  
+  @IBAction func backButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
+  
   @IBAction func didSelectGender(_ sender: UIButton) {
     guard let gender = sender.currentTitle, !gender.isEmpty else { return }
 //    data.gender = gender

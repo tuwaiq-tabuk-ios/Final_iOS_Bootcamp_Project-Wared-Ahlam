@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 
 struct SignupDataModel {
+  
     var email = ""
     var password = ""
     var firstName = ""

@@ -13,6 +13,11 @@ class EnterYourCityVC: UIViewController {
   
   let city = ["" , "Riyadh","Mecca","Medina","Tabuk","Abha","Hail","Jeddah","Jizan","Khobar","Sakakah","Dammam","Buraydah","Dhahran"]
   
+  
+  @IBAction func backButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
+  
   @IBOutlet weak var cityField: UITextField!
   
   override func viewDidLoad() {

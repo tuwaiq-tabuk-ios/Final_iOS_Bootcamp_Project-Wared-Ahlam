@@ -17,6 +17,9 @@ class EnterNameVC
   @IBOutlet weak var signUpButton: UIButton!
 //  @IBOutlet weak var errorLabel: UILabel!
   
+  @IBAction func backButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()

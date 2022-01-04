@@ -51,7 +51,7 @@ extension MostDonatedViewController: UITableViewDataSource, UITableViewDelegate 
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeue()  as DonaitorTableViewCell
+    let cell = tableView.dequeue() as DonaitorTableViewCell
     cell.configureCell(data: donationData[indexPath.row])
     return cell
   }

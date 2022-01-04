@@ -13,6 +13,8 @@ class StartCheckingViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     questionaboutCheck.text = "These questions help you a lot in determining the ability to donate blood, and reduce your time and effort, and we will only take 30 seconds!"
+    
   }
 }

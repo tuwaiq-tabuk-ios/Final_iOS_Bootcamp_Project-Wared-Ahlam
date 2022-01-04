@@ -39,7 +39,7 @@ class EnterYourCityVC: UIViewController {
     }
     
     SignupDataModel.cityName = city
-    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "bloodTypeCV") as! YourBloodVC
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "bloodTypeCV") as! BooldTypeVC
     
     present(homeViewController, animated: true, completion: nil)
     

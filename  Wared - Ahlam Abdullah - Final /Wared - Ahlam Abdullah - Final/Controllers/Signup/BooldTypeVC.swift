@@ -7,7 +7,7 @@
 
 import UIKit
 
-class YourBloodVC: UIViewController {
+class BooldTypeVC: UIViewController {
  
     override func viewDidLoad() {
         super.viewDidLoad()

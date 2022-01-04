@@ -1,0 +1,6 @@
+framework module Pods_Wared___Ahlam_Abdullah___Final {
+  umbrella header "Pods-Wared - Ahlam Abdullah - Final-umbrella.h"
+
+  export *
+  module * { export * }
+}

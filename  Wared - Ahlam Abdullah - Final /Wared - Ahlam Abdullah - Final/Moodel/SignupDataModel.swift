@@ -14,10 +14,10 @@ struct SignupDataModel {
   static var password = ""
   static var firstName = ""
   static var lastName = ""
-  static  var bloodType = ""
+  static var bloodType = ""
   static var cityName = ""
   static var gender = ""
-  static  var age = ""
+  static var age = ""
   static var weight = ""
   
 }

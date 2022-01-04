@@ -36,6 +36,7 @@ class SelectWeightVC: UIViewController {
         Constants.alertShow(title: "Error!", Msg: error.debugDescription, context: self)
         
       } else {
+        
         let db = Firestore.firestore()
         let user = User(userId: result!.user.uid,
                         email: SignupDataModel.email,
@@ -47,6 +48,7 @@ class SelectWeightVC: UIViewController {
                         age: SignupDataModel.age,
                         weight: SignupDataModel.weight,
                         donated: 0)
+        
         db.collection("users").document("\(result!.user.uid)").setData(user.toDic()) { (error) in
           if error != nil {
             Constants.alertShow(title: "Error!", Msg: error.debugDescription, context: self)

@@ -7,8 +7,8 @@
 
 import Foundation
 
-class User
-{
+class User {
+  
   var userId : String?
   var email : String?
   var firstName : String?
@@ -56,11 +56,12 @@ class User
     self.age = (value["age"] as! String)
     self.weight = (value["weight"] as! String)
     self.donated  = (value["donated"] as! Int)
+    
   }
   
   
-  func toDic() -> [String : Any]
-  {
+  func toDic() -> [String : Any] {
+    
     var myDic = [String:String]()
     myDic["userId"] = self.userId
     myDic["email"] = self.email

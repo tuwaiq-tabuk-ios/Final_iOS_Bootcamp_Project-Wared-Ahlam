@@ -5,7 +5,6 @@
 //  Created by ahlam  on 16/05/1443 AH.
 //
 
-import Foundation
 import UIKit
 
 struct Constants {
@@ -22,9 +21,7 @@ struct Constants {
   }
   
   
-  static func alertShow(title : String , Msg : String,context : UIViewController)
-  
-  {
+  static func alertShow(title : String , Msg : String,context : UIViewController) {
     
     let alert = UIAlertController(title: title,
                                   message: Msg,
@@ -37,9 +34,9 @@ struct Constants {
     alert.addAction(dismiss)
     
     context.present(alert, animated: true, completion: nil)
+    
   }
-  
-  
+//
   typealias handler = (_ result : String,_ error :Bool)-> Void
   
   static func alertShow(title : String , Msg : String,context : UIViewController ,callBack:@escaping handler)

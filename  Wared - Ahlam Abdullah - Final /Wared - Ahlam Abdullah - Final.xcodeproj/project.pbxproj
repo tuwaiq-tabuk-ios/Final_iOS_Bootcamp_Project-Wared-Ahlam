@@ -24,12 +24,16 @@
 		5F335BE6277064AF0007E32B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F335BE5277064AF0007E32B /* Assets.xcassets */; };
 		5F335BE9277064AF0007E32B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F335BE7277064AF0007E32B /* LaunchScreen.storyboard */; };
 		5F335BF1277065470007E32B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5F335BF0277065470007E32B /* GoogleService-Info.plist */; };
+		5F5B59F0278363DF00D03979 /* HospitalsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F5B59EE278363DF00D03979 /* HospitalsTableViewCell.xib */; };
+		5F5B59F32783643400D03979 /* Hospitals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B59F22783643400D03979 /* Hospitals.swift */; };
+		5F5B59F72783680600D03979 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B59F62783680600D03979 /* Question.swift */; };
+		5F5B59FB27845B6300D03979 /* HospitalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F5B59FA27845B6300D03979 /* HospitalsTableViewCell.swift */; };
 		5F674BE727707925000406A4 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F674BE627707925000406A4 /* HomeViewController.swift */; };
 		5F674BE927707934000406A4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F674BE827707934000406A4 /* LoginViewController.swift */; };
 		5F674BEB27707942000406A4 /* EnterEmailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F674BEA27707942000406A4 /* EnterEmailVC.swift */; };
 		5F674BED27707D74000406A4 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F674BEC27707D74000406A4 /* Utilities.swift */; };
 		5F674BF127708C80000406A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F674BF027708C80000406A4 /* Constants.swift */; };
-		5F77FEB02779E7B800C82538 /* YourBloodVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77FEAF2779E7B800C82538 /* YourBloodVC.swift */; };
+		5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77FEAF2779E7B800C82538 /* BooldTypeVC.swift */; };
 		5FA227B5277A2332001FF9AD /* SelectYourGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */; };
 		5FA227B7277A27B5001FF9AD /* SelectWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B6277A27B5001FF9AD /* SelectWeightVC.swift */; };
 		5FA227B9277A30EA001FF9AD /* EnterYourCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B8277A30EA001FF9AD /* EnterYourCityVC.swift */; };
@@ -64,12 +68,16 @@
 		5F335BE8277064AF0007E32B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F335BEA277064AF0007E32B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5F335BF0277065470007E32B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5F5B59EE278363DF00D03979 /* HospitalsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HospitalsTableViewCell.xib; sourceTree = "<group>"; };
+		5F5B59F22783643400D03979 /* Hospitals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospitals.swift; sourceTree = "<group>"; };
+		5F5B59F62783680600D03979 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		5F5B59FA27845B6300D03979 /* HospitalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalsTableViewCell.swift; sourceTree = "<group>"; };
 		5F674BE627707925000406A4 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		5F674BE827707934000406A4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		5F674BEA27707942000406A4 /* EnterEmailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterEmailVC.swift; sourceTree = "<group>"; };
 		5F674BEC27707D74000406A4 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		5F674BF027708C80000406A4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		5F77FEAF2779E7B800C82538 /* YourBloodVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YourBloodVC.swift; sourceTree = "<group>"; };
+		5F77FEAF2779E7B800C82538 /* BooldTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooldTypeVC.swift; sourceTree = "<group>"; };
 		5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourGenderVC.swift; sourceTree = "<group>"; };
 		5FA227B6277A27B5001FF9AD /* SelectWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeightVC.swift; sourceTree = "<group>"; };
 		5FA227B8277A30EA001FF9AD /* EnterYourCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterYourCityVC.swift; sourceTree = "<group>"; };
@@ -181,6 +189,15 @@
 			path = Common;
 			sourceTree = "<group>";
 		};
+		5F5B59ED278363DF00D03979 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				5F5B59FA27845B6300D03979 /* HospitalsTableViewCell.swift */,
+				5F5B59EE278363DF00D03979 /* HospitalsTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		5F674BF227709092000406A4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -197,7 +214,7 @@
 				5F2E3395277880AF00EC5635 /* EnterNameVC.swift */,
 				5F2E3393277878F000EC5635 /* SelectAgeVC.swift */,
 				5FA227B8277A30EA001FF9AD /* EnterYourCityVC.swift */,
-				5F77FEAF2779E7B800C82538 /* YourBloodVC.swift */,
+				5F77FEAF2779E7B800C82538 /* BooldTypeVC.swift */,
 				5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */,
 				5FA227B6277A27B5001FF9AD /* SelectWeightVC.swift */,
 			);
@@ -207,6 +224,7 @@
 		5F77FEB22779F6E700C82538 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				5F244BD5277F3A7C0072F4B5 /* MapViewController.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -215,6 +233,8 @@
 			isa = PBXGroup;
 			children = (
 				5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */,
+				5F5B59F22783643400D03979 /* Hospitals.swift */,
+				5F5B59F62783680600D03979 /* Question.swift */,
 				5FE3B0DE2779995C00B8B644 /* SignupDataModel.swift */,
 				5F1C5282277D625D009BAD05 /* HospitalModel.swift */,
 				A9387098277FBFF100612B0A /* User.swift */,
@@ -237,11 +257,11 @@
 				5F1C5274277D60BB009BAD05 /* MostDonated */,
 				5F77FEB12779F66400C82538 /* Signup */,
 				5F77FEB22779F6E700C82538 /* Map */,
+				5F5B59ED278363DF00D03979 /* Cell */,
 				5F674BE627707925000406A4 /* HomeViewController.swift */,
 				5F335BE0277064AB0007E32B /* ViewController.swift */,
 				5FA227C2277B287F001FF9AD /* StartCheckingViewController.swift */,
 				5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */,
-				5F244BD5277F3A7C0072F4B5 /* MapViewController.swift */,
 				5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */,
 				5F674BE827707934000406A4 /* LoginViewController.swift */,
 				A976C46D27819ACB00E81A33 /* ProfileViewController.swift */,
@@ -314,6 +334,7 @@
 				5F335BF1277065470007E32B /* GoogleService-Info.plist in Resources */,
 				5F335BE6277064AF0007E32B /* Assets.xcassets in Resources */,
 				5F335BE4277064AB0007E32B /* Main.storyboard in Resources */,
+				5F5B59F0278363DF00D03979 /* HospitalsTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -370,6 +391,7 @@
 				5FA227B5277A2332001FF9AD /* SelectYourGenderVC.swift in Sources */,
 				5F674BEB27707942000406A4 /* EnterEmailVC.swift in Sources */,
 				5FA227B9277A30EA001FF9AD /* EnterYourCityVC.swift in Sources */,
+				5F5B59FB27845B6300D03979 /* HospitalsTableViewCell.swift in Sources */,
 				5F1C5281277D61F0009BAD05 /* MostDonatedModel.swift in Sources */,
 				5FA227BB277AF44D001FF9AD /* ImportantQuestionVC.swift in Sources */,
 				5F335BE1277064AB0007E32B /* ViewController.swift in Sources */,
@@ -378,9 +400,11 @@
 				5FE3B0DF2779995C00B8B644 /* SignupDataModel.swift in Sources */,
 				A976C4722781C01700E81A33 /* QuestionModel.swift in Sources */,
 				5F1C5283277D625D009BAD05 /* HospitalModel.swift in Sources */,
+				5F5B59F72783680600D03979 /* Question.swift in Sources */,
 				A976C46E27819ACC00E81A33 /* ProfileViewController.swift in Sources */,
 				5FA227B7277A27B5001FF9AD /* SelectWeightVC.swift in Sources */,
-				5F77FEB02779E7B800C82538 /* YourBloodVC.swift in Sources */,
+				5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */,
+				5F5B59F32783643400D03979 /* Hospitals.swift in Sources */,
 				5F335BDD277064AB0007E32B /* AppDelegate.swift in Sources */,
 				5F674BED27707D74000406A4 /* Utilities.swift in Sources */,
 				5F244BCC277F32030072F4B5 /* BookAppointmentViewController.swift in Sources */,

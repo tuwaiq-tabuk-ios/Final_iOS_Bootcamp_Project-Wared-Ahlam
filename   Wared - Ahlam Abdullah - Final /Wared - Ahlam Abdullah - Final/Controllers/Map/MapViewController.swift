@@ -13,20 +13,18 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
   
   
   @IBOutlet weak var mapView: MKMapView!
-  
   @IBOutlet weak var tableView: UITableView!
-  
   @IBOutlet weak var selectHospitalButton: UIButton!
   
-  let locationManager = CLLocationManager()
   
+  let locationManager = CLLocationManager()
   var selectedHospital:HospitalModel?
   let myHospitals = Hospitals()
-  
+
   
   override func viewDidLoad() {
-    
     super.viewDidLoad()
+    
     selectHospitalButton.setTitle("Select Hospital".Localized(), for: .normal)
     self.locationManager.requestAlwaysAuthorization()
     self.locationManager.requestWhenInUseAuthorization()
@@ -56,10 +54,10 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
     
   }
   
+  
   func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     
     setMapView(lat: manager.location!.coordinate.latitude, lng: manager.location!.coordinate.longitude)
-    //تحديد
     let annotation = MKPointAnnotation()
     
     annotation.coordinate = getCordinate(lat: manager.location!.coordinate.latitude, lng: manager.location!.coordinate.longitude)!
@@ -68,6 +66,7 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
     mapView.addAnnotation(annotation)
     
   }
+  
   
   func showHospitalsMarkerOnMap() {
     
@@ -87,7 +86,6 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
     
     if let cordinate = getCordinate(lat: lat, lng: lng){
       mapView.mapType = MKMapType.standard
-      // تحديد الزوم
       let mSpan = MKCoordinateSpan.init(latitudeDelta: 0.05, longitudeDelta: 0.05)
       
       let region = MKCoordinateRegion(center: cordinate, span: mSpan)
@@ -96,12 +94,12 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
     }
   }
   
+  
   func getCordinate (lat : Double , lng : Double) -> CLLocationCoordinate2D? {
     
     
     if !lat.isZero || !lng.isZero
     {
-      //تمرير
       let localValue : CLLocationCoordinate2D = CLLocationCoordinate2DMake(CLLocationDegrees.init(lat), CLLocationDegrees.init(lng))
       return localValue
     } else {
@@ -109,17 +107,21 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
     }
   }
   
+  
+  // MARK: -  @IBAction
+
   @IBAction func didSelectHospital(_ sender: Any) {
     
     let story  = UIStoryboard(name: "Main", bundle: nil)
     if let next = story.instantiateViewController(withIdentifier: "StartCheckingViewController") as? StartCheckingViewController{
-      next.modalPresentationStyle = .fullScreen
+     // next.modalPresentationStyle = .fullScreen
       self.present(next, animated: true, completion: nil)
       
     }
   }
 }
 
+// MARK: - extension
 extension MapViewController: UITableViewDataSource, UITableViewDelegate {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -139,6 +141,7 @@ extension MapViewController: UITableViewDataSource, UITableViewDelegate {
       self.setMapView(lat: selectedHospital!.lat, lng: selectedHospital!.lng)
     }
     self.setMapView(lat: selectedHospital!.lat, lng: selectedHospital!.lng)
+    Constants.R.hospitalIndex = indexPath.row
     selectHospitalButton.isEnabled = true
     tableView.reloadData()
   }

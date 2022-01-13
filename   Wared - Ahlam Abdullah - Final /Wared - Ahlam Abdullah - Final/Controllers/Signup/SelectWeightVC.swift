@@ -11,12 +11,36 @@ import Firebase
 
 class SelectWeightVC: UIViewController {
   
+  @IBOutlet weak var lessThan50View: UIView!
+  @IBOutlet weak var moraThan50View: UIView!
+  @IBOutlet weak var backButton: UIButton!
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
     self.title = ""
+    backButton.setTitle("<".Localized(), for: .normal)
   }
+  
+  
+  func transitionToHome() {
+    
+    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
+    vc?.modalPresentationStyle = .fullScreen
+    vc?.modalTransitionStyle = .crossDissolve
+    DispatchQueue.main.async {
+      self.present(vc!, animated: true, completion: nil)
+    }
+    
+  }
+  
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
+  // MARK: -  @IBAction
   
   @IBAction func backButton(_ sender: Any) {
     dismiss(animated: true, completion: nil)
@@ -25,11 +49,23 @@ class SelectWeightVC: UIViewController {
   
   @IBAction func didSelectWeight(_ sender: UIButton) {
     guard let weight = sender.currentTitle, !weight.isEmpty else { return }
+    if sender.currentTitle == "over".Localized() {
+      moraThan50View.backgroundColor  = #colorLiteral(red: 0.4156862745, green: 0, blue: 0, alpha: 1)
+      lessThan50View.backgroundColor = UIColor.clear
+    } else if sender.currentTitle == "less".Localized() {
+      lessThan50View.backgroundColor  = #colorLiteral(red: 0.4156862745, green: 0, blue: 0, alpha: 1)
+      moraThan50View.backgroundColor = UIColor.clear
+    }
+    
     SignupDataModel.weight = weight
   }
   
   
   @IBAction func registerButton(_ sender: Any) {
+    if SignupDataModel.weight.isEmpty {
+      Constants.alertShow(title: "weight".Localized(), Msg: "You must be over 18 old".Localized(), context: self)
+      return
+    }
     
     Auth.auth().createUser(withEmail: SignupDataModel.email, password: SignupDataModel.password) { (result, error) in
       if error != nil {
@@ -55,23 +91,8 @@ class SelectWeightVC: UIViewController {
           } else {
             self.transitionToHome()
           }
-          
         }
       }
     }
   }
-  
-  func transitionToHome() {
-    
-    let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
-    vc?.modalPresentationStyle = .fullScreen
-    vc?.modalTransitionStyle = .crossDissolve
-    DispatchQueue.main.async {
-      self.present(vc!, animated: true, completion: nil)
-    }
-    
-  }
-  
 }
-
-

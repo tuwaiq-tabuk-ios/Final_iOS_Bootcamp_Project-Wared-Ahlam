@@ -8,21 +8,23 @@
 import UIKit
 
 struct Constants {
-  
+
   struct Storyboard {
+    
     static let homeViewControlle = "HomeController"
     
   }
+  
   
   struct ImagesName {
     
     static let eyeSlashFill = "eye.slash.fill"
     static let eyeFill = "eye.fill"
+    
   }
   
   
-  struct UserData
-  {
+  struct UserData {
     
     static var userId = ""
     static var name = ""
@@ -30,8 +32,9 @@ struct Constants {
     static var email = ""
     static var donation = ""
     static  var city = ""
-    
+  
   }
+  
   
   struct R {
     static var hospitalIndex = 0
@@ -44,6 +47,8 @@ struct Constants {
   }
   
   
+  // MARK: -  alertShow
+
   static func alertShow(title : String , Msg : String,context : UIViewController) {
     
     let alert = UIAlertController(title: title,
@@ -51,10 +56,10 @@ struct Constants {
                                   preferredStyle:
                                       .alert)
     
-    let dismiss = UIAlertAction(title: "Dismiss",
+    let close = UIAlertAction(title: "Close".Localized(),
                                 style: .destructive)
     
-    alert.addAction(dismiss)
+    alert.addAction(close)
     
     context.present(alert, animated: true, completion: nil)
     
@@ -63,23 +68,22 @@ struct Constants {
   
   typealias handler = (_ result : String,_ error :Bool)-> Void
   
-  static func alertShow(title : String , Msg : String,context : UIViewController ,callBack:@escaping handler)
-  
-  {
+  static func alertShow(title : String , Msg : String,context : UIViewController ,callBack:@escaping handler) {
+    
     var action = ""
     let alert = UIAlertController(title: title,
                                   message: Msg, preferredStyle:
                                       .alert)
     
-    let Dismiss = UIAlertAction(title: "Dismiss", style: .cancel) {  DismissAction in
+    let close = UIAlertAction(title: "Close".Localized(), style: .cancel) {  dismissAction in
       
-      action = "Dismiss"
+      action = "Close".Localized()
       print(action)
       callBack(action,false)
     }
     
     
-    alert.addAction(Dismiss)
+    alert.addAction(close)
     
     context.present(alert, animated: true) {
       

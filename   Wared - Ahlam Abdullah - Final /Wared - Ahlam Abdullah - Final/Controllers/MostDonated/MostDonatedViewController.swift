@@ -47,17 +47,21 @@ class MostDonatedViewController: UIViewController {
   }
 }
 
+// MARK: -  extension
 
 extension MostDonatedViewController: UITableViewDataSource, UITableViewDelegate {
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return donationData.count
   }
+  
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeue() as DonaitorTableViewCell
     cell.configureCell(data: donationData[indexPath.row])
     return cell
   }
+  
   
   func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     return UIView()

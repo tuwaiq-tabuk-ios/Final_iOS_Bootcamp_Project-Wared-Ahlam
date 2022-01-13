@@ -129,7 +129,7 @@
 "Yjk-ce-7YX.normalTitle" = "اختر المستشفى";
 
 /* Class = "UIButton"; normalTitle = "less"; ObjectID = "Z3j-yQ-lAF"; */
-"Z3j-yQ-lAF.normalTitle" = "اقل";
+//"Z3j-yQ-lAF.normalTitle" = "اقل";
 
 /* Class = "UILabel"; text = "Less than 50"; ObjectID = "Z6t-Zc-Pq2"; */
 "Z6t-Zc-Pq2.text" = "اقل من ٥٠ ";
@@ -183,7 +183,7 @@
 "j8d-Jk-Dt2.normalTitle" = "انثى";
 
 /* Class = "UIButton"; normalTitle = "over"; ObjectID = "jVW-dc-Syw"; */
-"jVW-dc-Syw.normalTitle" = "اكثر";
+//"jVW-dc-Syw.normalTitle" = "اكثر";
 
 /* Class = "UIButton"; normalTitle = "B-"; ObjectID = "lAV-0h-D0a"; */
 "lAV-0h-D0a.normalTitle" = "B-";
@@ -257,16 +257,3 @@
 /* Class = "UILabel"; text = "Password :"; ObjectID = "z4n-bp-sd6"; */
 "z4n-bp-sd6.text" = "كلمة المرور";
 
-
-"Q1" = "هل تعاني من الحمى أو من أعراض أمراض الجهاز التنفسي أو تناولت مضادًا حيويًا في الأيام العشرة الماضية؟ ";
-
-"Q2" = "هل تناولت الأسبرين خلال الـ 48 ساعة الماضية؟";
-
-"Q3" = "هل تبرعت بالدم خلال الـ 60 يومًا الماضية؟";
-
-"Q4" = "هل أجريت الجراحة خلال الأشهر الـ 12 الماضية";
-
-"Q5" = "خلال الاثني عشر شهرًا الماضية ، هل تم وخزك بإبرة عن طريق الخطأ ، أو باستخدام إبر تجميلية ، أو خضعت للحجامة أو الوشم أو ثقب الأذن؟ ";
-
-"Q6" = "هل سافرت خارج المملكة في الـ 28 يومًا الماضية؟";
-"Q7" = "هل أصبت بفيروس كورونا خلال الشهر الماضي ، أو اشتبهت في إصابتك ، أو بالقرب من شخص مصاب؟";

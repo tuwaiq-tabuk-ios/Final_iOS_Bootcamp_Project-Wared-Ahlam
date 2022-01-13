@@ -11,42 +11,36 @@ import Firebase
 
 class HomeViewController: UIViewController {
   
-  
   @IBOutlet weak var bookBtn: UIButton!
-  
   @IBOutlet weak var nameLabel: UILabel!
-  
   @IBOutlet weak var cityLabel: UILabel!
-  
   @IBOutlet weak var bloodTypeLabel: UILabel!
-  
   @IBOutlet weak var messageLabel: UILabel!
-  
   @IBOutlet weak var messageView: UIView!
-  
   @IBOutlet weak var donateLabel: UILabel!
-  
   @IBOutlet weak var hospitalNameLabel: UILabel!
-  
   @IBOutlet weak var dateLabel: UILabel!
-  
-  
   @IBOutlet weak var timeLabel: UILabel!
-  
-  
   @IBOutlet weak var collectionView: UICollectionView!
-  
   @IBOutlet weak var pageControl: UIPageControl!
+  @IBOutlet weak var delateButton: UIButton!
+  @IBOutlet weak var editButton: UIButton!
   
+  
+  let db = Firestore.firestore()
+  
+  // MARK: - variables
+
   var userId = "" , donated = "" , city = "" , bloodType = "" , hospitalName = "" ,date = "" , time = "" , haveAppointment = false
   
   
-  var collectionImage = [UIImage(named: "1")!,
-                          UIImage(named: "2")!,
-                          UIImage(named: "3")!]
+  var collectionImage = [UIImage(named: "999")!,
+                          UIImage(named: "1010")!,
+                          UIImage(named: "9090")!]
   
   var timer : Timer?
   var cutrrentCell = 0
+  
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -57,8 +51,11 @@ class HomeViewController: UIViewController {
     collectionView.delegate = self
     collectionView.dataSource = self
     pageControl.numberOfPages = collectionImage.count
+    
   }
   
+  
+
   
   override func viewWillAppear(_ animated: Bool) {
     super.viewWillAppear(animated)
@@ -71,14 +68,15 @@ class HomeViewController: UIViewController {
   
   }
 
+  
     func getUserData() {
     
     let db = Firestore.firestore()
-    self.userId = Auth.auth().currentUser!.uid
+      self.userId = Auth.auth().currentUser!.uid
     print("UserId : \(self.userId)")
     db.collection(Constants.Collections.users).document(userId).getDocument() { Document, error in
       if error != nil {
-        print("error in getting user Data : " + error!.localizedDescription)
+        print("error in getting user Data : ".Localized() + error!.localizedDescription)
       }
       
       if let doc = Document!.data(){
@@ -115,19 +113,25 @@ class HomeViewController: UIViewController {
         
         self.haveAppointment = true
         self.hospitalNameLabel.text = self.hospitalName
+        self.dateLabel.text = self.date
+        self.timeLabel.text = self.time
         
       } else {
         self.hospitalNameLabel.numberOfLines = 2
         
         self.hospitalNameLabel.text = "Our records indicate that you haven't donated yet. Do Good!".Localized()
         self.haveAppointment = false
+        self.dateLabel.text = ""
+        self.timeLabel.text = ""
         
       }
       
-      self.dateLabel.text = self.date
-      self.timeLabel.text = self.time
+  
+      self.delateButton.isHidden = !self.haveAppointment
+      self.editButton.isHidden = !self.haveAppointment
     }
   }
+  
   
   func startTimer() {
     timer = Timer.scheduledTimer(timeInterval: 3,
@@ -136,6 +140,7 @@ class HomeViewController: UIViewController {
                                  userInfo: nil,
                                  repeats: true)
   }
+  
   
   @objc func moveToNextIndex() {
     
@@ -152,20 +157,57 @@ class HomeViewController: UIViewController {
   }
 
   
+  // MARK: -  @IBAction
+
+  
+  @IBAction func editReservation(_ sender: Any) {
+    
+    let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
+    
+    
+    DispatchQueue.main.async {
+      self.navigationController?.pushViewController(vc!, animated: true)
+      
+    }
+  }
+  
+  
+  @IBAction func deleteReservation(_ sender: Any) {
+    
+    let uid = Auth.auth().currentUser!.uid
+    db.collection("Reservations").whereField("userId", isEqualTo: uid).getDocuments() { (querySnapshot, err) in
+      if let err = err {
+        print("Error getting documents: \(err)")
+      } else {
+        for document in querySnapshot!.documents {
+          document.reference.delete()
+        }
+        
+        self.getReservationData()
+      }
+    }
+  }
+  
+  
   @IBAction func didAppointment(_ sender: Any) {
     if self.haveAppointment
     {
-      Constants.alertShow(title: "Error!", Msg: "Sorry there is already Appoinment ", context: self)
-    }else
-    {
-      self.performSegue(withIdentifier: "goToMap", sender: nil)
-    }
+      Constants.alertShow(title: "Error!".Localized(), Msg: "Sorry there is already Appoinment".Localized(), context: self)
+      
+    } else{
+      let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
+      self.navigationController?.pushViewController(vc!, animated: true)
     
+    }
   }
-  
-}
+ }
+
+
+
+// MARK: -  extension
 
 extension HomeViewController:UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+  
   
   func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
     
@@ -181,9 +223,11 @@ extension HomeViewController:UICollectionViewDelegate, UICollectionViewDataSourc
 
   }
   
+  
   func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
     return CGSize(width: collectionView.frame.width, height: collectionView.frame.height)
   }
+  
   
    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
      return 0

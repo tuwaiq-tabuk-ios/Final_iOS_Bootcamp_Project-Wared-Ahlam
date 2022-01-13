@@ -10,6 +10,7 @@ import UIKit
 class EnterYourCityVC: UIViewController {
   
   @IBOutlet weak var cityField: UITextField!
+  @IBOutlet weak var backButton: UIButton!
   
   var pickerView = UIPickerView()
   
@@ -19,14 +20,22 @@ class EnterYourCityVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     pickerView.dataSource = self
     pickerView.delegate = self
     cityField.inputView = pickerView
     cityField.textAlignment = .center
-    cityField.placeholder = "Select City"
-    
+    cityField.placeholder = "Select City".Localized()
+    backButton.setTitle("<".Localized(), for: .normal)
   }
   
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
+  // MARK: -  @IBAction
+
   
   @IBAction func backButton(_ sender: Any) {
     dismiss(animated: true, completion: nil)
@@ -47,18 +56,24 @@ class EnterYourCityVC: UIViewController {
   
 }
 
+// MARK: -  extension
+
 extension EnterYourCityVC:UIPickerViewDelegate, UIPickerViewDataSource {
   
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
     return 1
   }
   
+  
   func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
     return city.count
   }
+  
+  
   func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
     return city[row]
   }
+  
   
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     

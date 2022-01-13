@@ -9,6 +9,7 @@ import UIKit
 
 class Utilities: UIViewController {
   
+  
   static func styleTextField(_ textfield:UITextField) {
     
     let bottomLine = CALayer()
@@ -24,14 +25,16 @@ class Utilities: UIViewController {
     textfield.layer.addSublayer(bottomLine)
   }
   
+  
   static func styleFilledButton(_ button:UIButton) {
     
     // Filled rounded corner style
     
-    button.backgroundColor = #colorLiteral(red: 0.2509803922, green: 0.6549019608, blue: 0.5960784314, alpha: 1)
+    button.backgroundColor = #colorLiteral(red: 0.4156862745, green: 0, blue: 0, alpha: 1)
     button.layer.cornerRadius = 25.0
     button.tintColor = UIColor.white
   }
+  
   
   static func styleHollowButton(_ button:UIButton) {
     // Hollow rounded corner style
@@ -41,6 +44,7 @@ class Utilities: UIViewController {
     button.layer.cornerRadius = 25.0
     button.tintColor = UIColor.black
   }
+  
   
   static func isPasswordValid(_ password : String) -> Bool {
     
@@ -58,6 +62,7 @@ class Utilities: UIViewController {
     return emailPred.evaluate(with: email)
     
   }
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     

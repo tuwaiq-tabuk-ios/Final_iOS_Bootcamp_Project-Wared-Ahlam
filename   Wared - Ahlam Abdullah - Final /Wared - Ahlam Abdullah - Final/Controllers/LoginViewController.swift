@@ -21,9 +21,10 @@ class LoginViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    setUpElements()
     
+    setUpElements()
   }
+  
   
   func setUpElements() {
     // Style the elements
@@ -31,6 +32,15 @@ class LoginViewController: UIViewController {
     Utilities.styleTextField(passwordTextField)
     Utilities.styleFilledButton(loginButton)
   }
+  
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
+  
+  // MARK: -  @IBAction
+  
   
   @IBAction func loginTapped(_ sender: Any) {
     

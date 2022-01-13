@@ -15,13 +15,13 @@ struct Reservation {
   var time : String
   
   
-  func toDic() -> [String : Any ] {
+  func toDic() -> [String : Any] {
     
     return [
       "userId" : self.userId,
-      "hospitalName":self.hospitalName,
+      "hospitalName": self.hospitalName,
       "date": self.date,
-      "time" : self.time
+      "time": self.time
     ]  as [String : Any ]
     
   }

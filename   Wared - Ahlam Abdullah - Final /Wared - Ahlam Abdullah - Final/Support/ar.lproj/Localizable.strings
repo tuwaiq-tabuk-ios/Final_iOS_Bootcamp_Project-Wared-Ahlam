@@ -9,11 +9,11 @@
 "Our records indicate that you haven't donated yet. Do Good!" = "تشیر سجلاتنا إلى أنك
 لم تتبرع بعد. أفعل خیر! " ;
 "Please fill in all fields." = "جميع الخانات مطلوبة";
-"Please make sure your password is at least 8 characters, contains a special character and a number." = "كلمة المرور يجب ان تكون اكثر من ٨ خانات ويجب ان تحتوي علي حرف كبير وارقام وعلامات خاصة";
+"Please make sure your password is at least 8 characters, contains a special character and a number." = "كلمة المرور يجب ان تكون اكثر من ٨ خانات ويجب ان تحتوي علي حرف كبير وارقام و[$@$#!%*?&]";
 "Error!" = "خطأ";
 "Most Donates" = "الأكثر تبرعاً";
 "Invalid Age" = "العمر غیر صالح";
-"You must be over 18 old" = "یجب أن یكون عمرك أكثر من ١٨ عا ًما " ;
+"You must be over 18 old" = "یجب أن یكون عمرك أكثر من ١٨ عاما " ;
 "Riyadh" = "الرياض" ;
 "Mecca" = "مكة" ;
 "Medina" = "المدينة المنورة" ;
@@ -67,3 +67,16 @@
 "Maternity and children hospital" = "مستشفى الولادة والأطفال";
 "Yes" = "نعم";
 "No" = "لا";
+"Emile" = "الايميل" ;
+"Donated" = "عدد التبرعات";
+"blood type" = "فصيلة الدم";
+"Name" = "الاسم";
+"personal date" = "البيانات الشخصية" ;
+"Logoff" = "تسجيل خروج";
+"<" = ">";
+"Sorry there is already Appoinment" = "عذرا يوجد بالفعل موعد";
+"Close" = "اغلاق";
+"you Should enter a Valid Email" = "يجب عليك إدخال بريد إلكتروني صالح";
+"Invalid Age" = "العمر غير صالح";
+"error in getting user Data : " = "خطأ في الحصول على بيانات المستخدم";
+"Select City" = "اختر مدينتك";

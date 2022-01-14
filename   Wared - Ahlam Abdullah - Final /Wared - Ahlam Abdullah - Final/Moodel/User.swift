@@ -20,6 +20,7 @@ class User {
   var weight : String?
   var donated : Int?
   
+  
   init(userId : String,
        email : String,
        firstName : String,

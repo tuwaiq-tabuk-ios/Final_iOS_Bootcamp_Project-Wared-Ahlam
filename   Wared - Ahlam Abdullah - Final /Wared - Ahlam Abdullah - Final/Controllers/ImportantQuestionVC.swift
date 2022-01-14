@@ -21,6 +21,7 @@ class ImportantQuestionVC: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     containerView.layer.cornerRadius = 8
     containerView.clipsToBounds = true
     yesButton.layer.cornerRadius = 20
@@ -32,12 +33,16 @@ class ImportantQuestionVC: UIViewController {
     
   }
   
+  
   func getCurrentQuestion() {
     question = self.questions.qlist[selectedIndex]
     qusetionLabel.text = question!.question
     questionImageView.image = UIImage(named: question!.image)
     
   }
+  
+  // MARK: -  @IBAction
+
   
   @IBAction func answerButtonPresswd(_ sender: UIButton) {
     

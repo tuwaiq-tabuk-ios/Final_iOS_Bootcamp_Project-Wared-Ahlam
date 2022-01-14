@@ -15,6 +15,6 @@ struct HospitalModel {
   let workingDays: String
   let workingHours: String
   let distance: String
-  var image : String
+  var image : UIImage
   
 }

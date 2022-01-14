@@ -11,6 +11,8 @@ class SelectAgeVC: UIViewController {
   
   
   @IBOutlet weak var datePicker: UIDatePicker!
+  @IBOutlet weak var backButton: UIButton!
+  
   
   var ageMin : Date? , ageMax : Date?
   
@@ -24,8 +26,32 @@ class SelectAgeVC: UIViewController {
     ageMax = Calendar.current.date(byAdding: .year, value: -65, to: Date())!
     print("ageMax \(ageMax!)")
     // Do any additional setup after loading the view.
+    backButton.setTitle("<".Localized(), for: .normal)
   }
   
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
+  
+  func validateAge(birthDate: Date) -> Bool {
+    var isValid: Bool = true
+    if birthDate > ageMin! || birthDate < ageMax! {
+      isValid = false
+    }
+    return isValid
+  }
+  
+  
+  func transitionToHome() {
+    
+    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "EnterYourCityVC") as! EnterYourCityVC
+    present(homeViewController, animated: true, completion: nil)
+    
+  }
+  
+  // MARK: -  @IBAction
   
   
   @IBAction func backButton(_ sender: Any) {
@@ -39,26 +65,8 @@ class SelectAgeVC: UIViewController {
       SignupDataModel.age = datePicker.date.formatted()
       transitionToHome()
     } else {
-      Constants.alertShow(title: "Invalid Age", Msg: "You must be over 18 old".Localized(), context: self)
+      Constants.alertShow(title: "Invalid Age".Localized(), Msg: "You must be over 18 old".Localized(), context: self)
     }
   }
   
-  
-  func validateAge(birthDate: Date) -> Bool {
-    var isValid: Bool = true
-    if birthDate > ageMin! || birthDate < ageMax! {
-      isValid = false
-    }
-    return isValid
-  }
-  
-  
-  
-  func transitionToHome() {
-    
-    let homeViewController = storyboard?.instantiateViewController(withIdentifier: "EnterYourCityVC") as! EnterYourCityVC
-    present(homeViewController, animated: true, completion: nil)
-    
-  }
 }
-

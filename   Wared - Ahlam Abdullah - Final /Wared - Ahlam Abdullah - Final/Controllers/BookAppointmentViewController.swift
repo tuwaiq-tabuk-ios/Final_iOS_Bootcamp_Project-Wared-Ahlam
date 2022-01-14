@@ -12,20 +12,14 @@ import Firebase
 
 class BookAppointmentViewController: UIViewController {
   
+  @IBOutlet weak var imageHospitals: UIImageView!
   @IBOutlet weak var selectDateView: UIView!
-  
   @IBOutlet weak var containerView: UIView!
-  
   @IBOutlet weak var hospitalNameLabel: UILabel!
-  
   @IBOutlet weak var distanceLabel: UILabel!
-  
   @IBOutlet weak var workingDaysLabel: UILabel!
-  
   @IBOutlet weak var workingHoursLabel: UILabel!
-  
   @IBOutlet weak var selectDateTextField: UITextField!
-  
   @IBOutlet weak var selectTimeTextField: UITextField!
   
   
@@ -40,6 +34,7 @@ class BookAppointmentViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     containerView.layer.cornerRadius = 8
     containerView.layer.borderWidth = 1
     containerView.layer.borderColor =  #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0.92)
@@ -54,7 +49,7 @@ class BookAppointmentViewController: UIViewController {
     distanceLabel.text = hospital.distance
     workingDaysLabel.text = hospital.workingDays
     workingHoursLabel.text = hospital.workingHours
-    
+    imageHospitals.image = hospital.image
     //     Do any additional setup after loading the view.
     showDatePicker()
     showTimePicker()
@@ -82,6 +77,7 @@ class BookAppointmentViewController: UIViewController {
     
   }
   
+  
   func showTimePicker() {
     //Formate Date
     timePicker.datePickerMode = .time
@@ -103,12 +99,14 @@ class BookAppointmentViewController: UIViewController {
     
   }
   
+  
   @objc func donedatePicker() {
     let formatter = DateFormatter()
     formatter.dateFormat = "dd/MM/yyyy"
     selectDateTextField.text = formatter.string(from: datePicker.date)
     self.view.endEditing(true)
   }
+  
   
   @objc func doneTimePicker() {
     let formatter = DateFormatter()
@@ -117,9 +115,13 @@ class BookAppointmentViewController: UIViewController {
     self.view.endEditing(true)
   }
   
+  
   @objc func cancelDatePicker() {
     self.view.endEditing(true)
   }
+  
+  
+  // MARK: -  @IBAction
   
   @IBAction func bookButton(_ sender: Any) {
     
@@ -127,6 +129,7 @@ class BookAppointmentViewController: UIViewController {
     guard let date = selectDateTextField.text, !date.isEmpty else {Constants.alertShow(title: "Error!".Localized(), Msg: "error in getting Date ".Localized(), context: self); return }
     guard let userId  = Auth.auth().currentUser?.uid,!userId.isEmpty else{Constants.alertShow(title: "Error!".Localized(), Msg: "error in getting your Data".Localized(), context: self);return}
     let reservation = Reservation(userId: userId, hospitalName: hospital.name, date: date, time: time)
+    
     Firestore.firestore().collection(Constants.Collections.reservations).document(userId).setData(reservation.toDic()) { dbError in
       if dbError != nil {
         Constants.alertShow(title: "Error!".Localized(), Msg: dbError!.localizedDescription , context: self)
@@ -147,11 +150,16 @@ class BookAppointmentViewController: UIViewController {
         
       }
     }
+    
   }
 }
+// MARK: - extension
 
 extension String {
   func Localized() -> String {
     return NSLocalizedString(self, tableName: "Localizable", bundle: .main, value: self, comment: self)
   }
 }
+
+
+

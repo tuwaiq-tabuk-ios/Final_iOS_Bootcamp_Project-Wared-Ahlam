@@ -9,12 +9,23 @@ import UIKit
 
 class BooldTypeVC: UIViewController {
   
+  @IBOutlet weak var backButton: UIButton!
+  
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
     self.title = ""
+    backButton.setTitle("<".Localized(), for: .normal)
   }
   
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
+  // MARK: -  @IBAction
+
   
   @IBAction func backButton(_ sender: Any) {
     dismiss(animated: true, completion: nil)

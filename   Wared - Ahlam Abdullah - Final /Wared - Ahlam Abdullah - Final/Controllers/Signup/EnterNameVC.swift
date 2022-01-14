@@ -12,31 +12,32 @@ import Firebase
 class EnterNameVC
 : UIViewController {
   
+  
   @IBOutlet weak var firstNameTextField: UITextField!
   @IBOutlet weak var lastNameTextField: UITextField!
   @IBOutlet weak var signUpButton: UIButton!
-  //  @IBOutlet weak var errorLabel: UILabel!
-  
-  
-  
-  
-  @IBAction func backButton(_ sender: Any) {
-    dismiss(animated: true, completion: nil)
-  }
-  
+  @IBOutlet weak var backButton: UIButton!
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
     setUpElements()
     self.title = ""
-    
+    backButton.setTitle("<".Localized(), for: .normal)
   }
+  
+  
+  override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+      self.view.endEditing(true)
+  }
+  
   
   func setUpElements() {
     
     Utilities.styleTextField(firstNameTextField)
     Utilities.styleTextField(lastNameTextField)
   }
+  
   
   func validateFields() -> String? {
     
@@ -47,6 +48,13 @@ class EnterNameVC
       return "Please fill in all fields.".Localized()
     }
     return nil
+  }
+  
+  // MARK: -  @IBAction
+
+  
+  @IBAction func backButton(_ sender: Any) {
+    dismiss(animated: true, completion: nil)
   }
   
   
@@ -60,7 +68,7 @@ class EnterNameVC
       }
       return
     }
-    guard let lastName = lastNameTextField.text , !lastName.isEmpty else {
+   guard let lastName = lastNameTextField.text , !lastName.isEmpty else {
       let error = validateFields()
       
       if error != nil {

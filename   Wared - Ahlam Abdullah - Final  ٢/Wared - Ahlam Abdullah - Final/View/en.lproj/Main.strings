@@ -1,0 +1,300 @@
+
+/* Class = "UILabel"; text = "Welcome Message"; ObjectID = "17V-7b-F3p"; */
+"17V-7b-F3p.text" = "Welcome Message";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "1Ap-ER-II5"; */
+"1Ap-ER-II5.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "1Ap-ER-II5"; */
+"1Ap-ER-II5.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "1BG-Fz-fX0"; */
+"1BG-Fz-fX0.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "More than 50"; ObjectID = "1zX-TJ-A4G"; */
+"1zX-TJ-A4G.text" = "More than 50";
+
+/* Class = "UILabel"; text = "Your age :"; ObjectID = "2Ni-kO-JU6"; */
+"2Ni-kO-JU6.text" = "Your age :";
+
+/* Class = "UIButton"; normalTitle = "Book an appointment"; ObjectID = "2VN-oJ-6C1"; */
+"2VN-oJ-6C1.normalTitle" = "Book an appointment";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "3V1-uD-mgA"; */
+"3V1-uD-mgA.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "workdays"; ObjectID = "4ZW-Xd-nEy"; */
+"4ZW-Xd-nEy.text" = "workdays";
+
+/* Class = "UIButton"; normalTitle = "AB+"; ObjectID = "4jY-U4-eS7"; */
+"4jY-U4-eS7.normalTitle" = "AB+";
+
+/* Class = "UILabel"; text = "blood type"; ObjectID = "4rA-Vl-J5u"; */
+"4rA-Vl-J5u.text" = "blood type";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "5XQ-LQ-2LK"; */
+"5XQ-LQ-2LK.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "5XQ-LQ-2LK"; */
+"5XQ-LQ-2LK.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "63M-jk-tOQ"; */
+"63M-jk-tOQ.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6I5-Aq-XUs"; */
+"6I5-Aq-XUs.normalTitle" = "Button";
+
+/* Class = "UIButton"; configuration.title = "Logoff"; ObjectID = "6um-Ok-1Vx"; */
+"6um-Ok-1Vx.configuration.title" = "Logoff";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "6um-Ok-1Vx"; */
+"6um-Ok-1Vx.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "8DK-bf-rCb"; */
+"8DK-bf-rCb.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Enter your city :"; ObjectID = "8s7-6h-fSC"; */
+"8s7-6h-fSC.text" = "Enter your city :";
+
+/* Class = "UIButton"; normalTitle = "Male"; ObjectID = "9JW-Uj-o9p"; */
+"9JW-Uj-o9p.normalTitle" = "Male";
+
+/* Class = "UITextField"; placeholder = "Choose the date"; ObjectID = "9Qu-lo-JI5"; */
+"9Qu-lo-JI5.placeholder" = "Choose the date";
+
+/* Class = "UILabel"; text = "work hours"; ObjectID = "9rJ-7h-UdB"; */
+"9rJ-7h-UdB.text" = "work hours";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9uk-wX-VVi"; */
+"9uk-wX-VVi.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "9xB-NO-ynC"; */
+"9xB-NO-ynC.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "9xB-NO-ynC"; */
+"9xB-NO-ynC.normalTitle" = "Button";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "ASB-5W-G6X"; */
+"ASB-5W-G6X.placeholder" = "Password";
+
+/* Class = "UITextField"; text = "AHLAm1998@"; ObjectID = "ASB-5W-G6X"; */
+"ASB-5W-G6X.text" = "AHLAm1998@";
+
+/* Class = "UIButton"; configuration.title = "No"; ObjectID = "BsE-Ti-6Oq"; */
+"BsE-Ti-6Oq.configuration.title" = "No";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "BsE-Ti-6Oq"; */
+"BsE-Ti-6Oq.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "I'm.."; ObjectID = "Cpy-Ib-Kil"; */
+"Cpy-Ib-Kil.text" = "I'm..";
+
+/* Class = "UILabel"; text = "Yor name :"; ObjectID = "Fcq-NG-Xe8"; */
+"Fcq-NG-Xe8.text" = "Yor name :";
+
+/* Class = "UIButton"; normalTitle = "AB-"; ObjectID = "Hcj-7y-XHk"; */
+"Hcj-7y-XHk.normalTitle" = "AB-";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "IDW-Db-ige"; */
+"IDW-Db-ige.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "IDW-Db-ige"; */
+"IDW-Db-ige.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Male"; ObjectID = "Jeq-tG-Ac1"; */
+"Jeq-tG-Ac1.text" = "Male";
+
+/* Class = "UILabel"; text = "8:3"; ObjectID = "KcF-9D-2LN"; */
+"KcF-9D-2LN.text" = "8:3";
+
+/* Class = "UILabel"; text = "Email :"; ObjectID = "L0U-LI-GjP"; */
+"L0U-LI-GjP.text" = "Email :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "NU7-lt-kyu"; */
+"NU7-lt-kyu.text" = "Label";
+
+/* Class = "UILabel"; text = "Welcome Message"; ObjectID = "ON5-tA-60g"; */
+"ON5-tA-60g.text" = "Welcome Message";
+
+/* Class = "UILabel"; text = "My weight is :"; ObjectID = "Oea-a6-Ar0"; */
+"Oea-a6-Ar0.text" = "My weight is :";
+
+/* Class = "UILabel"; text = "personal data"; ObjectID = "Rq8-50-fvN"; */
+"Rq8-50-fvN.text" = "personal data";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "SWp-RT-UkL"; */
+"SWp-RT-UkL.placeholder" = "Email";
+
+/* Class = "UITextField"; text = "basmah@outlook.com"; ObjectID = "SWp-RT-UkL"; */
+"SWp-RT-UkL.text" = "basmah@outlook.com";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "Sce-11-LxH"; */
+"Sce-11-LxH.text" = "Label";
+
+/* Class = "UILabel"; text = "Donated"; ObjectID = "TBW-4e-9zE"; */
+"TBW-4e-9zE.text" = "Donated";
+
+/* Class = "UIButton"; normalTitle = "Register me!"; ObjectID = "VMn-vo-u4K"; */
+"VMn-vo-u4K.normalTitle" = "Register me!";
+
+/* Class = "UITextField"; placeholder = "Choose the date"; ObjectID = "Viw-v8-8IQ"; */
+"Viw-v8-8IQ.placeholder" = "Choose the date";
+
+/* Class = "UILabel"; text = "You can donate when you are over 18 years old"; ObjectID = "WBJ-NX-OtZ"; */
+"WBJ-NX-OtZ.text" = "You can donate when you are over 18 years old";
+
+/* Class = "UILabel"; text = "Sunday - Thursday"; ObjectID = "WLE-sq-o8J"; */
+"WLE-sq-o8J.text" = "Sunday - Thursday";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "WMv-yU-YQH"; */
+"WMv-yU-YQH.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "B+"; ObjectID = "WSM-sQ-mco"; */
+"WSM-sQ-mco.normalTitle" = "B+";
+
+/* Class = "UIButton"; configuration.title = "Start Check"; ObjectID = "XXG-OK-5Mm"; */
+"XXG-OK-5Mm.configuration.title" = "Start Check";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "XXG-OK-5Mm"; */
+"XXG-OK-5Mm.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Select Hospital"; ObjectID = "Yjk-ce-7YX"; */
+"Yjk-ce-7YX.normalTitle" = "Select Hospital";
+
+/* Class = "UIButton"; normalTitle = "less"; ObjectID = "Z3j-yQ-lAF"; */
+"Z3j-yQ-lAF.normalTitle" = "less";
+
+/* Class = "UILabel"; text = "Less than 50"; ObjectID = "Z6t-Zc-Pq2"; */
+"Z6t-Zc-Pq2.text" = "Less than 50";
+
+/* Class = "UITextField"; placeholder = "list name"; ObjectID = "ZwB-R7-WBk"; */
+"ZwB-R7-WBk.placeholder" = "list name";
+
+/* Class = "UILabel"; text = "Famale"; ObjectID = "Zzo-0i-BEI"; */
+"Zzo-0i-BEI.text" = "Famale";
+
+/* Class = "UITextField"; placeholder = "eample@gmail.com"; ObjectID = "aTq-CY-cIb"; */
+"aTq-CY-cIb.placeholder" = "eample@gmail.com";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "ajp-tI-OaG"; */
+"ajp-tI-OaG.placeholder" = "Password";
+
+/* Class = "UIButton"; ibShadowedToolTip = "\\"; ObjectID = "amd-8T-qLa"; */
+"amd-8T-qLa.ibShadowedToolTip" = "\\";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "amd-8T-qLa"; */
+"amd-8T-qLa.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Most donated list"; ObjectID = "bIl-gz-VZs"; */
+"bIl-gz-VZs.text" = "Most donated list";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "ccn-X8-qq6"; */
+"ccn-X8-qq6.title" = "Item";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "dDO-Xb-2Yj"; */
+"dDO-Xb-2Yj.text" = "Email";
+
+/* Class = "UILabel"; text = "...."; ObjectID = "dY4-rC-sis"; */
+"dY4-rC-sis.text" = "....";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "fjp-M3-CWH"; */
+"fjp-M3-CWH.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "......"; ObjectID = "fpx-cx-LTm"; */
+"fpx-cx-LTm.text" = "......";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gji-Fi-ed0"; */
+"gji-Fi-ed0.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "h4i-qn-zrW"; */
+"h4i-qn-zrW.normalTitle" = "Login";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "h8H-cP-YPY"; */
+"h8H-cP-YPY.title" = "Item";
+
+/* Class = "UIButton"; normalTitle = "A-"; ObjectID = "hxA-Wj-jjx"; */
+"hxA-Wj-jjx.normalTitle" = "A-";
+
+/* Class = "UILabel"; text = "Yor blood type :"; ObjectID = "iYq-7W-SNx"; */
+"iYq-7W-SNx.text" = "Yor blood type :";
+
+/* Class = "UIButton"; normalTitle = "Female"; ObjectID = "j8d-Jk-Dt2"; */
+"j8d-Jk-Dt2.normalTitle" = "Female";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "jCj-Ln-5t1"; */
+"jCj-Ln-5t1.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "jCj-Ln-5t1"; */
+"jCj-Ln-5t1.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "over"; ObjectID = "jVW-dc-Syw"; */
+"jVW-dc-Syw.normalTitle" = "over";
+
+/* Class = "UIButton"; normalTitle = "B-"; ObjectID = "lAV-0h-D0a"; */
+"lAV-0h-D0a.normalTitle" = "B-";
+
+/* Class = "UIButton"; normalTitle = "Sign Up"; ObjectID = "lsE-84-41M"; */
+"lsE-84-41M.normalTitle" = "Sign Up";
+
+/* Class = "UIButton"; configuration.title = "Yes"; ObjectID = "mb2-dA-xpn"; */
+"mb2-dA-xpn.configuration.title" = "Yes";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "mb2-dA-xpn"; */
+"mb2-dA-xpn.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "ocI-cq-ARm"; */
+"ocI-cq-ARm.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "O-"; ObjectID = "pAx-Wp-26M"; */
+"pAx-Wp-26M.normalTitle" = "O-";
+
+/* Class = "UILabel"; text = "Magrabi Hospitals"; ObjectID = "sFM-Pe-csW"; */
+"sFM-Pe-csW.text" = "Magrabi Hospitals";
+
+/* Class = "UILabel"; text = "Knowing your weight helps us determine whether you can donate blood. You can donate blood when your weight is over 50 kg"; ObjectID = "t61-Gc-fpO"; */
+"t61-Gc-fpO.text" = "Knowing your weight helps us determine whether you can donate blood. You can donate blood when your weight is over 50 kg";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "uFc-dr-Pic"; */
+"uFc-dr-Pic.text" = "Label";
+
+/* Class = "UIButton"; configuration.title = "Book Appointment"; ObjectID = "uSp-9k-UNQ"; */
+"uSp-9k-UNQ.configuration.title" = "Book Appointment";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "uSp-9k-UNQ"; */
+"uSp-9k-UNQ.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "8 min"; ObjectID = "uXG-lX-2Ul"; */
+"uXG-lX-2Ul.text" = "8 min";
+
+/* Class = "UIButton"; normalTitle = "O+"; ObjectID = "usP-74-P4s"; */
+"usP-74-P4s.normalTitle" = "O+";
+
+/* Class = "UILabel"; text = "Magrabi Hospitals"; ObjectID = "vPh-bs-ZWd"; */
+"vPh-bs-ZWd.text" = "Magrabi Hospitals";
+
+/* Class = "UILabel"; text = "...."; ObjectID = "vV6-Vx-xq2"; */
+"vV6-Vx-xq2.text" = "....";
+
+/* Class = "UITextField"; placeholder = "First name"; ObjectID = "vmT-0B-Jiw"; */
+"vmT-0B-Jiw.placeholder" = "First name";
+
+/* Class = "UITabBarItem"; title = "Community"; ObjectID = "wa5-yP-bnd"; */
+"wa5-yP-bnd.title" = "Community";
+
+/* Class = "UILabel"; text = "............"; ObjectID = "wi6-qw-QWk"; */
+"wi6-qw-QWk.text" = "............";
+
+/* Class = "UIButton"; normalTitle = "A+"; ObjectID = "x5M-of-dNb"; */
+"x5M-of-dNb.normalTitle" = "A+";
+
+/* Class = "UIButton"; configuration.title = "<"; ObjectID = "xed-ld-bGL"; */
+"xed-ld-bGL.configuration.title" = "<";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "xed-ld-bGL"; */
+"xed-ld-bGL.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Next"; ObjectID = "ybO-f3-Kph"; */
+"ybO-f3-Kph.normalTitle" = "Next";
+
+/* Class = "UILabel"; text = "Password :"; ObjectID = "z4n-bp-sd6"; */
+"z4n-bp-sd6.text" = "Password :";

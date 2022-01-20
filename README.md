@@ -9,13 +9,13 @@ This application helps many, many people and hospitals to help those in need of 
 
 
 ## Project description
-This application will allow people who are interesed in blood donation, to donate their blood or see if there is a blood that matches thier needs. 
+This application will allow people who are interesed in blood donation
 Also, the user will be able to find the hospitals in the area by viewing them on a map.
 
 
 
 ## Target User
-People who want to donate blood or need blood
+People who want to donate blood 
 
 
 ## User stories
@@ -27,4 +27,3 @@ People who want to donate blood or need blood
 
 ● Book appointments to donate in the specified area.
 
-● If user or one of the relatives need blood, you can determine I need blood and select the hospital and the type of blood you need.

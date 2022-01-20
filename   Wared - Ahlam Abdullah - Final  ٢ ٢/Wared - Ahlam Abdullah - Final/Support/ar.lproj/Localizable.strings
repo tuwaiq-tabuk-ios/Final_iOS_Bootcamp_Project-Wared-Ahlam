@@ -1,0 +1,102 @@
+/* 
+ Localizable.strings
+ Wared - Ahlam Abdullah - Final
+ 
+ Created by ahlam  on 02/06/1443 AH.
+ 
+ */
+
+"Our records indicate that you haven't donated yet. Do Good!" = "تشیر سجلاتنا إلى أنك
+لم تتبرع بعد. أفعل خیر! " ;
+"Please fill in all fields." = "جميع الخانات مطلوبة";
+"Please make sure your password is at least 8 characters, contains a special character and a number." = "كلمة المرور يجب ان تكون اكثر من ٨ خانات ويجب ان تحتوي علي حرف كبير وارقام و[$@$#!%*?&]";
+"Error!" = "خطأ";
+"Most Donates" = "الأكثر تبرعاً";
+"Invalid Age" = "العمر غیر صالح";
+"You must be over 18 old" = "یجب أن یكون عمرك أكثر من ١٨ عاما " ;
+"Riyadh" = "الرياض" ;
+"Mecca" = "مكة" ;
+"Medina" = "المدينة المنورة" ;
+"Tabuk" = "تبوك";
+"Abha" = "ابها" ;
+"Hail" = "حائل";
+"Jeddah"= "جدة";
+"Jizan"= "جيزان";
+"Khobar"= "الخبر";
+"Sakakah"= "سكاكة";
+"Dammam"= "الدمام";
+"Buraydah"= "بريدة";
+"Dhahran"= "عنيزه";
+"Select City" = "اختر المدينة" ;
+"Reservation" = "الموعد";
+"These questions help you a lot in determining the ability to donate blood, and reduce your time and effort, and we will only take 30 seconds!" = "تساعدك هذه الأسئلة كثيرًا في تحديد القدرة على التبرع بالدم ، وتقليل وقتك وجهدك ، وسنأخذ 30 ثانية فقط! اذا كنت مؤهل للتبرع بالدم ؟";
+
+"Done" = "تم";
+"cancel" = "الغاء";
+"error in getting Time " = "خطأ في جلب الوقت ";
+"error in getting Date " = "خطأ في جلب التاريخ";
+"error in getting your Data" = "خطأ في جلب البيانات";
+"Reservation done Successfully" = "تم حجز الموعد بنجاح ";
+"success!" = "تم";
+"You cann't Donnate now try in a nother time." = "عفوا لا يمكنك التبرع في الوقت الحالي .";
+"Do you have a fever or a symptom of a respiratory illness or have you taken an antibiotic in the previous 10 days?" = "ھل تعانین من الحمى أو من أعراض أمراض الجھاز التنفسي أو تناولت مضا ًدا حیویًا في الأیام العشرة الماضیة؟";
+"Have you taken aspirin within the previous 48 hours?" = "ھل تناولت الأسبرین خلال الـ ٤٨ ساعة الماضیة؟";
+"Have you donated blood in the past 60 days?" = "ھل تبرعت بالدم خلال الـ ٦٠ یو ًما الماضیة؟";
+"Has surgery been performed within the previous 12 months?" = "ھل أجریت الجراحة خلال الأشھر الـ ١٢ الماضیة؟ ";
+"In the previous 12 months, have you been accidentally pricked with a needle, using cosmetic needles, or had cupping, tattooing or ear piercing?" = "خلال الاثني عشر شھ ًرا الماضیة ، ھل تم وخزك بإبرة عن طریق الخطأ ، أو باستخدام إبر تجمیلیة ، أو
+خضعت للحجامة أو الوشم أو ثقب الأذن؟ ";
+"Have you traveled outside the Kingdom in the previous 28 days?" = "ھل سافرت خارج المملكة في الـ ٢٨ یو ًما الماضیة؟";
+"Were you infected with the Corona virus during the past month, or suspected of infection, or close to an infected person?" = "ھل أصبت بفیروس كورونا خلال الشھر الماضي ، أو اشتبھت في إصابتك ، أو بالقرب من شخص مصاب؟";
+
+"Sign Up" = "انشاء حساب";
+"Login"= "تسجيل الدخول";
+"Email" = "البريد الإلكتروني";
+"passowrd" = "كلمة المرور";
+"Book Appointment" = "حجز موعد";
+"Donations" = "التبرع";
+"Main" = "الرئيسية";
+"X69-bm-xSf.text" = "البريد الإلكتروني";
+"1Nm-hx-zZN.text" = "فئة الدم";
+"fTb-bH-gn7.text" = "عدد مرات التبرع";
+"Donates" = "التبرعات";
+"Select Hospital" = "اختر المستشفى";
+"XXG-OK-5Mm.setTitle" = "ابدأالفحص";
+"King khaled Hospital" = "مستشفي الملك خالد";
+"Sunday-Thursday" = "من الأحد للخميس ";
+"King Salman Hospital" = "مستشفى الملك سلمان";
+"King Fahd Bin Sultan Hospital" = "مستشفى الملك فهد";
+"Maternity and children hospital" = "مستشفى الولادة والأطفال";
+"Yes" = "نعم";
+"No" = "لا";
+"Emile" = "الايميل" ;
+"Donated" = "عدد التبرعات";
+"blood type" = "فصيلة الدم";
+"Name" = "الاسم";
+"personal date" = "البيانات الشخصية" ;
+"Logoff" = "تسجيل خروج";
+"<" = ">";
+"Sorry there is already Appoinment" = "عذرا يوجد بالفعل موعد";
+"Close" = "اغلاق";
+"you Should enter a Valid Email" = "يجب عليك إدخال بريد إلكتروني صالح";
+"Invalid Age" = "العمر غير صالح";
+"error in getting user Data : " = "خطأ في الحصول على بيانات المستخدم";
+"Select City" = "اختر مدينتك";
+"Hospital must be selected" = "يجب اختيار المستشفى";
+"Error" = "خطا";
+"Sorry!" = "اسف!";
+"Retype the password" = "اعد كتابة كلمة المرور ";
+"The password is different" = "كلمة المرور مختلفه ";
+"You have to choose the weight" = "يجب اختيار وزنك";
+"No" = "لا";
+"Yas" = "نعم";
+"Are you sure about canceling the appointment?" = "هل أنت متأكد من إلغاء الموعد؟";
+"Cancel" = "الغاء";
+"Edit" = "تعديل";
+"Delete" = "حذف";
+"firstName" = "الاسم الاول";
+"lastName" = "الاسم الاخير";
+"bloodType" = "نوع الدم";
+"cityName" = "المدينه";
+"donated" = "التبرع";
+"Number of registered donations:" = "عدد التبرعات المسجلة:";
+"blood type:" = "نوع الدم";

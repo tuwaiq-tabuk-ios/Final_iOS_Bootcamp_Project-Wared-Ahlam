@@ -20,7 +20,7 @@ class HospitalsTableViewCell: UITableViewCell {
   @IBOutlet weak var workingHoursLabel: UILabel!
   
   // MARK: - Cell Life Cycle
-
+  
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
@@ -30,10 +30,10 @@ class HospitalsTableViewCell: UITableViewCell {
     containerView.clipsToBounds = true
   }
   
-
+  
   // MARK: - configureCell
   
-  func configureCell(hospital: HospitalModel, isSelected: Bool) {
+  func configureCell(hospital: HospitalStorage, isSelected: Bool) {
     containerView.layer.borderColor = isSelected ?  #colorLiteral(red: 0.4156862745, green: 0, blue: 0, alpha: 1) : #colorLiteral(red: 0.6666666865, green: 0.6666666865, blue: 0.6666666865, alpha: 1)
     containerView.backgroundColor = isSelected ?  #colorLiteral(red: 0.721568644, green: 0.8862745166, blue: 0.5921568871, alpha: 0.1542701199) : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
     distanceView.backgroundColor = isSelected ?  .clear : #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)

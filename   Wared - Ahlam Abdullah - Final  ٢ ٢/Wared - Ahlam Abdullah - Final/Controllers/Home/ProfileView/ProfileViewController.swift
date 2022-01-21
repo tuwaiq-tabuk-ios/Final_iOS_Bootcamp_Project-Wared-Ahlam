@@ -45,7 +45,7 @@ class ProfileViewController: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func btnLogOutTapped(_ sender: Any) {
+  @IBAction func btnLogOutTapped(_ sender: UIButton) {
     
     try? Auth.auth().signOut()
     let story = UIStoryboard(name: "Main", bundle: nil)

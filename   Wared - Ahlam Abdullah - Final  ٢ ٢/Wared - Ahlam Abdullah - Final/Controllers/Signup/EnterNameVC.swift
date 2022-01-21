@@ -23,7 +23,8 @@ class EnterNameVC: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    backButton.setTitle("<".Localized(), for: .normal)
+    backButton.setTitle("<".Localized(),
+                        for: .normal)
   }
   
   // MARK: - Methods
@@ -46,27 +47,33 @@ class EnterNameVC: UIViewController {
   // MARK: -  @IBAction
   
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     dismiss(animated: true, completion: nil)
   }
   
   
-  @IBAction func signUpTapped(_ sender: Any) {
+  @IBAction func signUpTapped(_ sender: UIButton) {
     
-    guard let firstName = firstNameTextField.text , !firstName.isEmpty else {
+    guard let firstName = firstNameTextField.text
+            , !firstName.isEmpty else {
       let error = validateFields()
       
       if error != nil {
-        K.alertShow(title: "Error!".Localized(), Msg: error!, context: self)
+        K.alertShow(title: "Error!".Localized(),
+                    Msg: error!,
+                    context: self)
       }
       return
     }
     
-    guard let lastName = lastNameTextField.text , !lastName.isEmpty else {
+    guard let lastName = lastNameTextField.text ,
+            !lastName.isEmpty else {
       let error = validateFields()
       
       if error != nil {
-        K.alertShow(title: "Error!".Localized(), Msg: error!, context: self)
+        K.alertShow(title: "Error!".Localized(),
+                    Msg: error!,
+                    context: self)
       }
       return
     }

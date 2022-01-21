@@ -64,7 +64,7 @@ class ImportantQuestionVC: UIViewController {
         
       } else {
         
-        if let next = story.instantiateViewController(withIdentifier: "BookAppointmentViewController") as? BookAppointmentViewController{
+        if let next = story.instantiateViewController(withIdentifier: "BookAppointmentViewController") as? BookAppointmentVC{
           self.navigationController?.pushViewController(next, animated: false)
         }
       }

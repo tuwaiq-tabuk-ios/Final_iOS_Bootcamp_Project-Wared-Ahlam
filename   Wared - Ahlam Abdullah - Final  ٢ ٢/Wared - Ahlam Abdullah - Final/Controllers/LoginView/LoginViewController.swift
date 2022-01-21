@@ -33,14 +33,15 @@ class LoginViewController: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func loginTapped(_ sender: Any) {
+  @IBAction func loginTapped(_ sender: UIButton) {
     
     // Create cleaned versions of the text field
     let email = emailTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
     let password = passwordTextField.text!.trimmingCharacters(in: .whitespacesAndNewlines)
     
     // Signing in the user
-    Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+    Auth.auth().signIn(withEmail: email,
+                       password: password) { (result, error) in
       
       if error != nil {
         // Couldn't sign in

@@ -49,7 +49,9 @@ struct K {
   
   // MARK: -  alertShow
   
-  static func alertShow(title : String , Msg : String,context : UIViewController) {
+  static func alertShow(title : String ,
+                        Msg : String,
+                        context : UIViewController) {
     
     let alert = UIAlertController(title: title,
                                   message: Msg,
@@ -65,13 +67,18 @@ struct K {
   }
   
   
-  typealias handler = (_ result : String,_ error :Bool)-> Void
+  typealias handler = (_ result : String,
+                       _ error :Bool)-> Void
   
-  static func alertShow(title : String , Msg : String,context : UIViewController ,callBack:@escaping handler) {
+  static func alertShow(title : String ,
+                        Msg : String,
+                        context : UIViewController ,
+                        callBack:@escaping handler) {
     
     var action = ""
     let alert = UIAlertController(title: title,
-                                  message: Msg, preferredStyle:
+                                  message: Msg,
+                                  preferredStyle:
                                       .alert)
     
     let close = UIAlertAction(title: "Close".Localized(), style: .cancel) {  dismissAction in

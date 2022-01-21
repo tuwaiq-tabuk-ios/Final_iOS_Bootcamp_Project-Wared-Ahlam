@@ -46,7 +46,8 @@ class QuestionList {
     self.qlist.append(QuestionModel(question: "Has surgery been performed within the previous 12 months?".Localized(),
                                     answers: [AnswerModel(answer: "Yes".Localized()),AnswerModel(answer: "No".Localized())],
                                     proccedAnswer: "No", image: "822188"))
-    self.qlist.append(QuestionModel(question: "In the previous 12 months, have you been accidentally pricked with a needle, using cosmetic needles, or had cupping, tattooing or ear piercing?".Localized(),
+    
+    self.qlist.append(QuestionModel(question: "In the past 12 months, have you been accidentally pricked with a needle, or with cosmetic needles?".Localized(),
                                     answers: [AnswerModel(answer: "Yes".Localized()),AnswerModel(answer: "No".Localized())],
                                     proccedAnswer: "No", image: "5"))
     

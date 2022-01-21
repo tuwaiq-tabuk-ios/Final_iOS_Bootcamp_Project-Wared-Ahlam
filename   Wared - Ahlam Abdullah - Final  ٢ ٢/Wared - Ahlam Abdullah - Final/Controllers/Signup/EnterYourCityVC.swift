@@ -42,12 +42,12 @@ class EnterYourCityVC: UIViewController {
   // MARK: -  @IBAction
   
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     dismiss(animated: true, completion: nil)
   }
   
   
-  @IBAction func nextButton(_ sender: Any) {
+  @IBAction func nextButton(_ sender: UIButton) {
     guard let city = cityField.text , !city.isEmpty else {
       K.alertShow(title: "Invalid Age".Localized(), Msg: "You must be over 18 old".Localized(), context: self)
       return

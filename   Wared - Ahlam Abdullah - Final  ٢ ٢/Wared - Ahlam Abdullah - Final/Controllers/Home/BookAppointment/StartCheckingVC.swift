@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StartCheckingViewController: UIViewController {
+class StartCheckingVC: UIViewController {
   
   //MARK: - IBOutlets
   
@@ -23,10 +23,12 @@ class StartCheckingViewController: UIViewController {
   
   // MARK: - @IBAction
   
-  @IBAction func startCheck(_ sender: Any) {
+  @IBAction func startCheck(_ sender: UIButton) {
+    
     let story  = UIStoryboard(name: "Main", bundle: nil)
     if let next = story.instantiateViewController(withIdentifier: "Question") as? ImportantQuestionVC{
       self.navigationController?.pushViewController(next, animated: false)
+      
     }
   }
 }

@@ -51,12 +51,12 @@ class SelectAgeVC: UIViewController {
   // MARK: -  @IBAction
   
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     dismiss(animated: true, completion: nil)
   }
   
   
-  @IBAction func validateButtonPressed(_ sender: Any) {
+  @IBAction func validateButtonPressed(_ sender: UIButton) {
     let isValidAge = validateAge(birthDate: datePicker.date);
     if isValidAge {
       SignupDataModel.age = datePicker.date.formatted()

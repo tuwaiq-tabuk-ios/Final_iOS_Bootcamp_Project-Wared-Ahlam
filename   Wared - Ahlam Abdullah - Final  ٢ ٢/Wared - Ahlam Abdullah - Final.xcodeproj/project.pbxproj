@@ -12,9 +12,9 @@
 		5F1C5279277D60BB009BAD05 /* DonaitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5276277D60BB009BAD05 /* DonaitorTableViewCell.swift */; };
 		5F1C527A277D60BB009BAD05 /* DonaitorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C5277277D60BB009BAD05 /* DonaitorTableViewCell.xib */; };
 		5F1C5281277D61F0009BAD05 /* MostDonatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */; };
-		5F1C5283277D625D009BAD05 /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5282277D625D009BAD05 /* HospitalModel.swift */; };
+		5F1C5283277D625D009BAD05 /* HospitalStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5282277D625D009BAD05 /* HospitalStorage.swift */; };
 		5F1C5285277D62FA009BAD05 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5284277D62FA009BAD05 /* UITableViewExtension.swift */; };
-		5F244BCC277F32030072F4B5 /* BookAppointmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */; };
+		5F244BCC277F32030072F4B5 /* BookAppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F244BCB277F32030072F4B5 /* BookAppointmentVC.swift */; };
 		5F244BD6277F3A7C0072F4B5 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F244BD5277F3A7C0072F4B5 /* MapViewController.swift */; };
 		5F2E3394277878F000EC5635 /* SelectAgeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3393277878F000EC5635 /* SelectAgeVC.swift */; };
 		5F2E3396277880AF00EC5635 /* EnterNameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F2E3395277880AF00EC5635 /* EnterNameVC.swift */; };
@@ -36,7 +36,7 @@
 		5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77FEAF2779E7B800C82538 /* BooldTypeVC.swift */; };
 		5F82F7FD27862A1F00ABB621 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F82F7FF27862A1F00ABB621 /* Localizable.strings */; };
 		5F9EF2792799C95300D2B3C1 /* MostDonatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF2782799C95300D2B3C1 /* MostDonatedViewController.swift */; };
-		5F9EF27B2799C9B700D2B3C1 /* StartCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */; };
+		5F9EF27B2799C9B700D2B3C1 /* StartCheckingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF27A2799C9B700D2B3C1 /* StartCheckingVC.swift */; };
 		5F9EF27F2799E94600D2B3C1 /* HomeStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF27E2799E94600D2B3C1 /* HomeStartViewController.swift */; };
 		5F9EF286279A03FD00D2B3C1 /* pexels-artem-podrez-8533517.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5F9EF285279A03F700D2B3C1 /* pexels-artem-podrez-8533517.mp4 */; };
 		5FA227B5277A2332001FF9AD /* SelectYourGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */; };
@@ -58,9 +58,9 @@
 		5F1C5276277D60BB009BAD05 /* DonaitorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaitorTableViewCell.swift; sourceTree = "<group>"; };
 		5F1C5277277D60BB009BAD05 /* DonaitorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonaitorTableViewCell.xib; sourceTree = "<group>"; };
 		5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDonatedModel.swift; sourceTree = "<group>"; };
-		5F1C5282277D625D009BAD05 /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
+		5F1C5282277D625D009BAD05 /* HospitalStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalStorage.swift; sourceTree = "<group>"; };
 		5F1C5284277D62FA009BAD05 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
-		5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentViewController.swift; sourceTree = "<group>"; };
+		5F244BCB277F32030072F4B5 /* BookAppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookAppointmentVC.swift; sourceTree = "<group>"; };
 		5F244BD5277F3A7C0072F4B5 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		5F2E3393277878F000EC5635 /* SelectAgeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectAgeVC.swift; sourceTree = "<group>"; };
 		5F2E3395277880AF00EC5635 /* EnterNameVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnterNameVC.swift; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 		5F82F7FE27862A1F00ABB621 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F82F80027862A2200ABB621 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F9EF2782799C95300D2B3C1 /* MostDonatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDonatedViewController.swift; sourceTree = "<group>"; };
-		5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCheckingViewController.swift; sourceTree = "<group>"; };
+		5F9EF27A2799C9B700D2B3C1 /* StartCheckingVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCheckingVC.swift; sourceTree = "<group>"; };
 		5F9EF27E2799E94600D2B3C1 /* HomeStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStartViewController.swift; sourceTree = "<group>"; };
 		5F9EF285279A03F700D2B3C1 /* pexels-artem-podrez-8533517.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-artem-podrez-8533517.mp4"; sourceTree = "<group>"; };
 		5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourGenderVC.swift; sourceTree = "<group>"; };
@@ -251,9 +251,9 @@
 		5F9EF2742799BBA500D2B3C1 /* BookAppointment */ = {
 			isa = PBXGroup;
 			children = (
-				5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */,
+				5F9EF27A2799C9B700D2B3C1 /* StartCheckingVC.swift */,
 				5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */,
-				5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */,
+				5F244BCB277F32030072F4B5 /* BookAppointmentVC.swift */,
 			);
 			path = BookAppointment;
 			sourceTree = "<group>";
@@ -294,7 +294,7 @@
 			isa = PBXGroup;
 			children = (
 				5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */,
-				5F1C5282277D625D009BAD05 /* HospitalModel.swift */,
+				5F1C5282277D625D009BAD05 /* HospitalStorage.swift */,
 				5F5B59F22783643400D03979 /* Hospitals.swift */,
 				5F378FB02785DCEA006A35A5 /* Reservation.swift */,
 				5FE3B0DE2779995C00B8B644 /* SignupDataModel.swift */,
@@ -460,15 +460,15 @@
 				5F2E3394277878F000EC5635 /* SelectAgeVC.swift in Sources */,
 				5FE3B0DF2779995C00B8B644 /* SignupDataModel.swift in Sources */,
 				A976C4722781C01700E81A33 /* QuestionModel.swift in Sources */,
-				5F1C5283277D625D009BAD05 /* HospitalModel.swift in Sources */,
+				5F1C5283277D625D009BAD05 /* HospitalStorage.swift in Sources */,
 				A976C46E27819ACC00E81A33 /* ProfileViewController.swift in Sources */,
-				5F9EF27B2799C9B700D2B3C1 /* StartCheckingViewController.swift in Sources */,
+				5F9EF27B2799C9B700D2B3C1 /* StartCheckingVC.swift in Sources */,
 				5FA227B7277A27B5001FF9AD /* SelectWeightVC.swift in Sources */,
 				5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */,
 				5F5B59F32783643400D03979 /* Hospitals.swift in Sources */,
 				5F335BDD277064AB0007E32B /* AppDelegate.swift in Sources */,
 				5F674BED27707D74000406A4 /* Utilities.swift in Sources */,
-				5F244BCC277F32030072F4B5 /* BookAppointmentViewController.swift in Sources */,
+				5F244BCC277F32030072F4B5 /* BookAppointmentVC.swift in Sources */,
 				A9387099277FBFF200612B0A /* User.swift in Sources */,
 				5F244BD6277F3A7C0072F4B5 /* MapViewController.swift in Sources */,
 				5F1C5285277D62FA009BAD05 /* UITableViewExtension.swift in Sources */,

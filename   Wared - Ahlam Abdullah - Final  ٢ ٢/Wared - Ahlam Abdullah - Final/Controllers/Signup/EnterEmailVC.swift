@@ -50,16 +50,20 @@ class EnterEmailVC: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func signUpTapped(_ sender: Any) {
+  @IBAction func signUpTapped(_ sender: UIButton) {
     
     guard let email = emailTextField.text, !email.isEmpty else {
-      K.alertShow(title: "Error!".Localized(), Msg: validateFields()!, context: self)
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: validateFields()!,
+                  context: self)
       return
     }
     
-    guard let password = passwordTextField.text, !password.isEmpty else { return }
+    guard let password = passwordTextField.text,
+          !password.isEmpty else { return }
     
-    guard let retypePasswor = retypePasswordText.text, !password.isEmpty else { return }
+    guard let retypePasswor = retypePasswordText.text,
+          !password.isEmpty else { return }
     
     SignupDataModel.password = password
     SignupDataModel.email = email
@@ -68,18 +72,24 @@ class EnterEmailVC: UIViewController {
     if !Utilities.isValidEmailAddress(email: email)
     {
       
-      K.alertShow(title: "Error!".Localized(), Msg: "you Should enter a Valid Email".Localized(), context: self)
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "you Should enter a Valid Email".Localized(),
+                  context: self)
       
     } else if Utilities.isPasswordValid(password) == false {
       // Password isn't secure enough
       
-      K.alertShow(title: "Error!".Localized(), Msg: "Please make sure your password is at least 8 characters, contains a special character and a number.".Localized(), context: self)
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "Please make sure your password is at least 8 characters, contains a special character and a number.".Localized(),
+                  context: self)
       
     } else if Utilities.isPasswordValidRetype(retypePasswor) == false {
-      K.alertShow(title: "Error!".Localized(), Msg: "The password is different".Localized(), context: self)
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "The password is different".Localized(),
+                  context: self)
       
       
-    }else {
+    } else {
       let homeViewController = storyboard?.instantiateViewController(withIdentifier: "EnterNameVC") as! EnterNameVC
       
       present(homeViewController, animated: true, completion: nil)
@@ -101,7 +111,7 @@ class EnterEmailVC: UIViewController {
   }
   
   
-  @IBAction func passwordRe(_ sender: Any) {
+  @IBAction func passwordRe(_ sender: UIButton) {
     retypePasswordText.isSecureTextEntry.toggle()
     if retypePasswordText.isSecureTextEntry
     {

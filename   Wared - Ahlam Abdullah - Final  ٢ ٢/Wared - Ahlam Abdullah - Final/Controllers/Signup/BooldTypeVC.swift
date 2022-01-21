@@ -31,7 +31,7 @@ class BooldTypeVC: UIViewController {
   // MARK: -  @IBAction
   
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     dismiss(animated: true, completion: nil)
   }
   

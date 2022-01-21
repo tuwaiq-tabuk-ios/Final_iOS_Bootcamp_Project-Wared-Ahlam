@@ -12,6 +12,7 @@ import UIKit
 
 class EnterEmailVC: UIViewController {
   
+  //MARK: - IBOutlets
   
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
@@ -19,24 +20,19 @@ class EnterEmailVC: UIViewController {
   @IBOutlet weak var buttonEye: UIButton!
   @IBOutlet weak var retypePasswordText: UITextField!
   
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.title = ""
   }
   
-  
- 
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
   }
   
-  
-  
-  // MARK: - validateFields
   // Check the fields and validate that the data is correct. If everything is correct, this method returns nil. Otherwise, it returns the error message
   func validateFields() -> String? {
     
@@ -51,7 +47,6 @@ class EnterEmailVC: UIViewController {
     // Check if the password is secure
     return nil
   }
-  
   
   // MARK: -  @IBAction
   
@@ -69,9 +64,6 @@ class EnterEmailVC: UIViewController {
     SignupDataModel.password = password
     SignupDataModel.email = email
     SignupDataModel.retypePassword = password
-    
-    
-    
     
     if !Utilities.isValidEmailAddress(email: email)
     {
@@ -110,7 +102,6 @@ class EnterEmailVC: UIViewController {
   
   
   @IBAction func passwordRe(_ sender: Any) {
-    
     retypePasswordText.isSecureTextEntry.toggle()
     if retypePasswordText.isSecureTextEntry
     {

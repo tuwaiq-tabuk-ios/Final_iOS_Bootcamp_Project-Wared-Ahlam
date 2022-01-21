@@ -19,6 +19,5 @@ struct SignupDataModel {
   static var gender = ""
   static var age = ""
   static var weight = ""
-  
 }
 

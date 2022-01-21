@@ -9,44 +9,35 @@ import UIKit
 import FirebaseAuth
 import Firebase
 
-class EnterNameVC
-: UIViewController {
+class EnterNameVC: UIViewController {
   
+  //MARK: - IBOutlets
   
   @IBOutlet weak var firstNameTextField: UITextField!
   @IBOutlet weak var lastNameTextField: UITextField!
   @IBOutlet weak var backButton: UIButton!
   
+  
+  // MARK: - View controller Life Cycle
+  
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    setUpElements()
-    self.title = ""
     backButton.setTitle("<".Localized(), for: .normal)
   }
   
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)
   }
   
   
-  func setUpElements() {
-    
-    Utilities.styleTextField(firstNameTextField)
-    Utilities.styleTextField(lastNameTextField)
-    
-  }
-  
-  // MARK: - validateFields
-  
   func validateFields() -> String? {
     
     if firstNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == "" ||
         lastNameTextField.text?.trimmingCharacters(in: .whitespacesAndNewlines) == ""
     {
-      
       return "Please fill in all fields.".Localized()
     }
     return nil

@@ -29,7 +29,8 @@
 "Dhahran"= "عنيزه";
 "Select City" = "اختر المدينة" ;
 "Reservation" = "الموعد";
-"These questions help you a lot in determining the ability to donate blood, and reduce your time and effort, and we will only take 30 seconds!" = "هذه الأسئلة تساعدنا في تحديد اذا كنت مؤهل للتبرع بالدم ؟";
+"These questions help you a lot in determining the ability to donate blood, and reduce your time and effort, and we will only take 30 seconds!" = "تساعدك هذه الأسئلة كثيرًا في تحديد القدرة على التبرع بالدم ، وتقليل وقتك وجهدك ، وسنأخذ 30 ثانية فقط! اذا كنت مؤهل للتبرع بالدم ؟";
+
 "Done" = "تم";
 "cancel" = "الغاء";
 "error in getting Time " = "خطأ في جلب الوقت ";
@@ -86,3 +87,16 @@
 "Retype the password" = "اعد كتابة كلمة المرور ";
 "The password is different" = "كلمة المرور مختلفه ";
 "You have to choose the weight" = "يجب اختيار وزنك";
+"No" = "لا";
+"Yas" = "نعم";
+"Are you sure about canceling the appointment?" = "هل أنت متأكد من إلغاء الموعد؟";
+"Cancel" = "الغاء";
+"Edit" = "تعديل";
+"Delete" = "حذف";
+"firstName" = "الاسم الاول";
+"lastName" = "الاسم الاخير";
+"bloodType" = "نوع الدم";
+"cityName" = "المدينه";
+"donated" = "التبرع";
+"Number of registered donations:" = "عدد التبرعات المسجلة:";
+"blood type:" = "نوع الدم";

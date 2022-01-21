@@ -10,11 +10,17 @@ import Firebase
 
 class MostDonatedViewController: UIViewController {
   
-  
+  //MARK: - IBOutlets
   @IBOutlet weak var tableView: UITableView!
+  
+  
+  // MARK: - Properties
   
   let db = Firestore.firestore()
   var donationData:[MostDonatedModel] = []
+  
+  
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -27,6 +33,8 @@ class MostDonatedViewController: UIViewController {
   }
   
   
+  // MARK: - Methods
+  
   func getData() {
     db.collection("users").getDocuments { (snapshot, error) in
       if error != nil {
@@ -35,8 +43,9 @@ class MostDonatedViewController: UIViewController {
         if let snapshot = snapshot {
           for document in snapshot.documents {
             let data = MostDonatedModel(name: "\(document["firstName"] as? String ?? "") \(document["lastName"] as? String ?? "")", bloodType: document["bloodType"] as? String ?? "", city: document["cityName"] as? String ?? "", donationCounts: document["donated"] as? Int ?? 0)
-            
-            self.donationData.append(data)
+            if data.donationCounts > 0 {
+              self.donationData.append(data)
+            }
           }
           self.donationData.sort {$0.donationCounts > $1.donationCounts}
           self.tableView.reloadData()
@@ -61,8 +70,8 @@ extension MostDonatedViewController: UITableViewDataSource, UITableViewDelegate 
     return cell
   }
   
-  
   func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
     return UIView()
+    
   }
 }

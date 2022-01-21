@@ -11,7 +11,6 @@
 		5F08B0A6278EF5C300A93236 /* HospitalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F08B0A3278EF5C300A93236 /* HospitalsTableViewCell.swift */; };
 		5F1C5279277D60BB009BAD05 /* DonaitorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5276277D60BB009BAD05 /* DonaitorTableViewCell.swift */; };
 		5F1C527A277D60BB009BAD05 /* DonaitorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F1C5277277D60BB009BAD05 /* DonaitorTableViewCell.xib */; };
-		5F1C527D277D6120009BAD05 /* MostDonatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C527C277D6120009BAD05 /* MostDonatedViewController.swift */; };
 		5F1C5281277D61F0009BAD05 /* MostDonatedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */; };
 		5F1C5283277D625D009BAD05 /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5282277D625D009BAD05 /* HospitalModel.swift */; };
 		5F1C5285277D62FA009BAD05 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F1C5284277D62FA009BAD05 /* UITableViewExtension.swift */; };
@@ -36,11 +35,14 @@
 		5F699595278722F1008051B7 /* HomeCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F699594278722F1008051B7 /* HomeCollectionCell.swift */; };
 		5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F77FEAF2779E7B800C82538 /* BooldTypeVC.swift */; };
 		5F82F7FD27862A1F00ABB621 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5F82F7FF27862A1F00ABB621 /* Localizable.strings */; };
+		5F9EF2792799C95300D2B3C1 /* MostDonatedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF2782799C95300D2B3C1 /* MostDonatedViewController.swift */; };
+		5F9EF27B2799C9B700D2B3C1 /* StartCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */; };
+		5F9EF27F2799E94600D2B3C1 /* HomeStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F9EF27E2799E94600D2B3C1 /* HomeStartViewController.swift */; };
+		5F9EF286279A03FD00D2B3C1 /* pexels-artem-podrez-8533517.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 5F9EF285279A03F700D2B3C1 /* pexels-artem-podrez-8533517.mp4 */; };
 		5FA227B5277A2332001FF9AD /* SelectYourGenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */; };
 		5FA227B7277A27B5001FF9AD /* SelectWeightVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B6277A27B5001FF9AD /* SelectWeightVC.swift */; };
 		5FA227B9277A30EA001FF9AD /* EnterYourCityVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227B8277A30EA001FF9AD /* EnterYourCityVC.swift */; };
 		5FA227BB277AF44D001FF9AD /* ImportantQuestionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */; };
-		5FA227C3277B287F001FF9AD /* StartCheckingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA227C2277B287F001FF9AD /* StartCheckingViewController.swift */; };
 		5FE3B0DF2779995C00B8B644 /* SignupDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE3B0DE2779995C00B8B644 /* SignupDataModel.swift */; };
 		9260519154EC5A30AAE63444 /* Pods_Wared___Ahlam_Abdullah___Final.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DFE461FCC6CFE601314EAEC /* Pods_Wared___Ahlam_Abdullah___Final.framework */; };
 		A9387099277FBFF200612B0A /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9387098277FBFF100612B0A /* User.swift */; };
@@ -55,7 +57,6 @@
 		5F08B0A3278EF5C300A93236 /* HospitalsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HospitalsTableViewCell.swift; sourceTree = "<group>"; };
 		5F1C5276277D60BB009BAD05 /* DonaitorTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DonaitorTableViewCell.swift; sourceTree = "<group>"; };
 		5F1C5277277D60BB009BAD05 /* DonaitorTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DonaitorTableViewCell.xib; sourceTree = "<group>"; };
-		5F1C527C277D6120009BAD05 /* MostDonatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MostDonatedViewController.swift; path = "Wared - Ahlam Abdullah - Final/Controllers/MostDonated/MostDonatedViewController.swift"; sourceTree = SOURCE_ROOT; };
 		5F1C5280277D61F0009BAD05 /* MostDonatedModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDonatedModel.swift; sourceTree = "<group>"; };
 		5F1C5282277D625D009BAD05 /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
 		5F1C5284277D62FA009BAD05 /* UITableViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
@@ -87,11 +88,14 @@
 		5F82F7FA2785FD7B00ABB621 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		5F82F7FE27862A1F00ABB621 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		5F82F80027862A2200ABB621 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5F9EF2782799C95300D2B3C1 /* MostDonatedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MostDonatedViewController.swift; sourceTree = "<group>"; };
+		5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartCheckingViewController.swift; sourceTree = "<group>"; };
+		5F9EF27E2799E94600D2B3C1 /* HomeStartViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeStartViewController.swift; sourceTree = "<group>"; };
+		5F9EF285279A03F700D2B3C1 /* pexels-artem-podrez-8533517.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pexels-artem-podrez-8533517.mp4"; sourceTree = "<group>"; };
 		5FA227B4277A2332001FF9AD /* SelectYourGenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectYourGenderVC.swift; sourceTree = "<group>"; };
 		5FA227B6277A27B5001FF9AD /* SelectWeightVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectWeightVC.swift; sourceTree = "<group>"; };
 		5FA227B8277A30EA001FF9AD /* EnterYourCityVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterYourCityVC.swift; sourceTree = "<group>"; };
 		5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImportantQuestionVC.swift; sourceTree = "<group>"; };
-		5FA227C2277B287F001FF9AD /* StartCheckingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartCheckingViewController.swift; sourceTree = "<group>"; };
 		5FE3B0DE2779995C00B8B644 /* SignupDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupDataModel.swift; sourceTree = "<group>"; };
 		A9387098277FBFF100612B0A /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A976C46D27819ACB00E81A33 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -128,14 +132,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		5F1C5274277D60BB009BAD05 /* MostDonated */ = {
-			isa = PBXGroup;
-			children = (
-				5F1C527C277D6120009BAD05 /* MostDonatedViewController.swift */,
-			);
-			path = MostDonated;
-			sourceTree = "<group>";
-		};
 		5F1C5275277D60BB009BAD05 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +139,7 @@
 				5F1C5277277D60BB009BAD05 /* DonaitorTableViewCell.xib */,
 				5F08B0A2278EF5C300A93236 /* HospitalsTableViewCell.xib */,
 				5F08B0A3278EF5C300A93236 /* HospitalsTableViewCell.swift */,
+				5F699594278722F1008051B7 /* HomeCollectionCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -163,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				5F335BDB277064AB0007E32B /* Wared - Ahlam Abdullah - Final */,
+				5F9EF285279A03F700D2B3C1 /* pexels-artem-podrez-8533517.mp4 */,
 				5F335BDA277064AB0007E32B /* Products */,
 				37EB15406370F2EE7AC906B8 /* Pods */,
 				3205EC10F64D1AD134AA9800 /* Frameworks */,
@@ -231,6 +229,67 @@
 			path = Map;
 			sourceTree = "<group>";
 		};
+		5F9EF2722799BB1700D2B3C1 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F674BE627707925000406A4 /* HomeViewController.swift */,
+				5F9EF2742799BBA500D2B3C1 /* BookAppointment */,
+				5F77FEB22779F6E700C82538 /* Map */,
+				5F9EF2762799C38300D2B3C1 /* ProfileView */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5F9EF2732799BB3A00D2B3C1 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				5F335BE0277064AB0007E32B /* ViewController.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		5F9EF2742799BBA500D2B3C1 /* BookAppointment */ = {
+			isa = PBXGroup;
+			children = (
+				5F9EF27A2799C9B700D2B3C1 /* StartCheckingViewController.swift */,
+				5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */,
+				5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */,
+			);
+			path = BookAppointment;
+			sourceTree = "<group>";
+		};
+		5F9EF2752799C27900D2B3C1 /* LoginView */ = {
+			isa = PBXGroup;
+			children = (
+				5F674BE827707934000406A4 /* LoginViewController.swift */,
+			);
+			path = LoginView;
+			sourceTree = "<group>";
+		};
+		5F9EF2762799C38300D2B3C1 /* ProfileView */ = {
+			isa = PBXGroup;
+			children = (
+				A976C46D27819ACB00E81A33 /* ProfileViewController.swift */,
+			);
+			path = ProfileView;
+			sourceTree = "<group>";
+		};
+		5F9EF2772799C95300D2B3C1 /* MostDonated */ = {
+			isa = PBXGroup;
+			children = (
+				5F9EF2782799C95300D2B3C1 /* MostDonatedViewController.swift */,
+			);
+			path = MostDonated;
+			sourceTree = "<group>";
+		};
+		5F9EF2842799FE0000D2B3C1 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				5F9EF27E2799E94600D2B3C1 /* HomeStartViewController.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
 		5FB5F26D2771041F00DC9EB0 /* Moodel */ = {
 			isa = PBXGroup;
 			children = (
@@ -257,17 +316,12 @@
 		5FB5F26F2771043200DC9EB0 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				5F9EF2772799C95300D2B3C1 /* MostDonated */,
+				5F9EF2842799FE0000D2B3C1 /* Start */,
+				5F9EF2732799BB3A00D2B3C1 /* Main */,
+				5F9EF2722799BB1700D2B3C1 /* Home */,
 				5F77FEB12779F66400C82538 /* Signup */,
-				5F77FEB22779F6E700C82538 /* Map */,
-				5F1C5274277D60BB009BAD05 /* MostDonated */,
-				5F674BE627707925000406A4 /* HomeViewController.swift */,
-				5F699594278722F1008051B7 /* HomeCollectionCell.swift */,
-				5F335BE0277064AB0007E32B /* ViewController.swift */,
-				5FA227C2277B287F001FF9AD /* StartCheckingViewController.swift */,
-				5F244BCB277F32030072F4B5 /* BookAppointmentViewController.swift */,
-				5FA227BA277AF44D001FF9AD /* ImportantQuestionVC.swift */,
-				5F674BE827707934000406A4 /* LoginViewController.swift */,
-				A976C46D27819ACB00E81A33 /* ProfileViewController.swift */,
+				5F9EF2752799C27900D2B3C1 /* LoginView */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -333,6 +387,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5F9EF286279A03FD00D2B3C1 /* pexels-artem-podrez-8533517.mp4 in Resources */,
 				5F08B0A5278EF5C300A93236 /* HospitalsTableViewCell.xib in Resources */,
 				5F335BE9277064AF0007E32B /* LaunchScreen.storyboard in Resources */,
 				5F1C527A277D60BB009BAD05 /* DonaitorTableViewCell.xib in Resources */,
@@ -392,12 +447,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5FA227C3277B287F001FF9AD /* StartCheckingViewController.swift in Sources */,
 				5FA227B5277A2332001FF9AD /* SelectYourGenderVC.swift in Sources */,
 				5F674BEB27707942000406A4 /* EnterEmailVC.swift in Sources */,
 				5FA227B9277A30EA001FF9AD /* EnterYourCityVC.swift in Sources */,
 				5F08B0A6278EF5C300A93236 /* HospitalsTableViewCell.swift in Sources */,
 				5F1C5281277D61F0009BAD05 /* MostDonatedModel.swift in Sources */,
+				5F9EF27F2799E94600D2B3C1 /* HomeStartViewController.swift in Sources */,
 				5FA227BB277AF44D001FF9AD /* ImportantQuestionVC.swift in Sources */,
 				5F335BE1277064AB0007E32B /* ViewController.swift in Sources */,
 				5F699595278722F1008051B7 /* HomeCollectionCell.swift in Sources */,
@@ -407,18 +462,19 @@
 				A976C4722781C01700E81A33 /* QuestionModel.swift in Sources */,
 				5F1C5283277D625D009BAD05 /* HospitalModel.swift in Sources */,
 				A976C46E27819ACC00E81A33 /* ProfileViewController.swift in Sources */,
+				5F9EF27B2799C9B700D2B3C1 /* StartCheckingViewController.swift in Sources */,
 				5FA227B7277A27B5001FF9AD /* SelectWeightVC.swift in Sources */,
 				5F77FEB02779E7B800C82538 /* BooldTypeVC.swift in Sources */,
 				5F5B59F32783643400D03979 /* Hospitals.swift in Sources */,
 				5F335BDD277064AB0007E32B /* AppDelegate.swift in Sources */,
 				5F674BED27707D74000406A4 /* Utilities.swift in Sources */,
 				5F244BCC277F32030072F4B5 /* BookAppointmentViewController.swift in Sources */,
-				5F1C527D277D6120009BAD05 /* MostDonatedViewController.swift in Sources */,
 				A9387099277FBFF200612B0A /* User.swift in Sources */,
 				5F244BD6277F3A7C0072F4B5 /* MapViewController.swift in Sources */,
 				5F1C5285277D62FA009BAD05 /* UITableViewExtension.swift in Sources */,
 				5F335BDF277064AB0007E32B /* SceneDelegate.swift in Sources */,
 				5F674BE927707934000406A4 /* LoginViewController.swift in Sources */,
+				5F9EF2792799C95300D2B3C1 /* MostDonatedViewController.swift in Sources */,
 				5F1C5279277D60BB009BAD05 /* DonaitorTableViewCell.swift in Sources */,
 				5F674BE727707925000406A4 /* HomeViewController.swift in Sources */,
 				5F378FB12785DCEA006A35A5 /* Reservation.swift in Sources */,

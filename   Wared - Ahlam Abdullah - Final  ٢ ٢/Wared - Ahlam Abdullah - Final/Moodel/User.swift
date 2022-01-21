@@ -61,10 +61,11 @@ class User {
     
   }
   
+  // MARK: - Methods
   
   func toDic() -> [String : Any] {
     
-    var myDic = [String:String]()
+    var myDic = [String:Any]()
     myDic["userId"] = self.userId
     myDic["email"] = self.email
     myDic["firstName"] = self.firstName
@@ -74,7 +75,7 @@ class User {
     myDic["gender"] = self.gender
     myDic["age"] =  self.age
     myDic["weight"] = self.weight
-    myDic["donated"] = String(self.donated!)
+    myDic["donated"] = self.donated
     
     return (myDic) as [String : Any]
     

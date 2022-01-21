@@ -9,13 +9,16 @@ import UIKit
 
 class SelectAgeVC: UIViewController {
   
+  //MARK: - IBOutlets
   
   @IBOutlet weak var datePicker: UIDatePicker!
   @IBOutlet weak var backButton: UIButton!
   
+  // MARK: - Properties
   
   var ageMin : Date? , ageMax : Date?
   
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,7 +32,7 @@ class SelectAgeVC: UIViewController {
     backButton.setTitle("<".Localized(), for: .normal)
   }
   
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)

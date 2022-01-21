@@ -47,6 +47,7 @@
 /* Class = "UITextField"; placeholder = "Choose the date"; ObjectID = "9Qu-lo-JI5"; */
 "9Qu-lo-JI5.placeholder" = "اختر التاريخ";
 
+"geb-oP-os7.placeholder" = "اعد كتابة كلمة المرور";
 /* Class = "UILabel"; text = "work hours"; ObjectID = "9rJ-7h-UdB"; */
 "9rJ-7h-UdB.text" = "ساعات العمل";
 
@@ -167,12 +168,14 @@
 /* Class = "UILabel"; text = "......"; ObjectID = "fpx-cx-LTm"; */
 "fpx-cx-LTm.text" = "......";
 
+"f9f-zJ-hBw.text" = "";
 /* Class = "UIButton"; normalTitle = "Login"; ObjectID = "h4i-qn-zrW"; */
 "h4i-qn-zrW.normalTitle" = "تسجيل دخول";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "hCb-8H-tu5"; */
 "hCb-8H-tu5.text" = "Label";
 
+"xNo-Pg-gtJ.text" = "عدد التبرعات المسجلة:";
 /* Class = "UIButton"; normalTitle = "A-"; ObjectID = "hxA-Wj-jjx"; */
 "hxA-Wj-jjx.normalTitle" = "A-";
 

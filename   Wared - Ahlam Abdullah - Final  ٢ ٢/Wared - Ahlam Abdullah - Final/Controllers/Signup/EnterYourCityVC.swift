@@ -9,14 +9,18 @@ import UIKit
 
 class EnterYourCityVC: UIViewController {
   
+  //MARK: - IBOutlets
+  
   @IBOutlet weak var cityField: UITextField!
   @IBOutlet weak var backButton: UIButton!
   
-  var pickerView = UIPickerView()
+  // MARK: - Properties
   
+  var pickerView = UIPickerView()
   
   let city = ["" , "Riyadh".Localized(),"Mecca".Localized(),"Medina".Localized(),"Tabuk".Localized(),"Abha".Localized(),"Hail".Localized(),"Jeddah".Localized(),"Jizan".Localized(),"Khobar".Localized(),"Sakakah".Localized(),"Dammam".Localized(),"Buraydah".Localized(),"Dhahran".Localized()]
   
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -29,7 +33,7 @@ class EnterYourCityVC: UIViewController {
     backButton.setTitle("<".Localized(), for: .normal)
   }
   
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)

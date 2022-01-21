@@ -96,9 +96,11 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="bloodType" destination="25P-jF-CBs" id="gac-zk-tT8"/>
                 <outlet property="bloodTypeLabel" destination="73Y-O2-FaE" id="FjV-Dq-xuu"/>
                 <outlet property="cityLabel" destination="3RS-Uf-j0n" id="eZC-Fr-agy"/>
                 <outlet property="nameLabel" destination="f9f-zJ-hBw" id="U8Q-Vh-FUl"/>
+                <outlet property="numberOF" destination="xNo-Pg-gtJ" id="jyP-bi-HmD"/>
                 <outlet property="numberOfDonations" destination="fAs-XX-s7P" id="6JB-oU-BYe"/>
             </connections>
             <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>

@@ -9,8 +9,12 @@ import UIKit
 
 class SelectYourGenderVC: UIViewController {
   
+  //MARK: - IBOutlets
+  
   @IBOutlet weak var backButton: UIButton!
   
+  
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -19,7 +23,7 @@ class SelectYourGenderVC: UIViewController {
     // Do any additional setup after loading the view.
   }
   
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)

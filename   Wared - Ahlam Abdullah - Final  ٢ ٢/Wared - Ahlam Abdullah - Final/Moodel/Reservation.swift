@@ -14,6 +14,7 @@ struct Reservation {
   var date : String
   var time : String
   
+  // MARK: - Methods
   
   func toDic() -> [String : Any] {
     

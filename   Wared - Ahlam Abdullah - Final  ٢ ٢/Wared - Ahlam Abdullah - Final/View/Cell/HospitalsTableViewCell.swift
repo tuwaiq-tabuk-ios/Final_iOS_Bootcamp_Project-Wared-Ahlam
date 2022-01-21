@@ -10,6 +10,8 @@ import UIKit
 
 class HospitalsTableViewCell: UITableViewCell {
   
+  //MARK: - IBOutlets
+  
   @IBOutlet weak var containerView: UIView!
   @IBOutlet weak var distanceView: UIView!
   @IBOutlet weak var hospitalNameLabel: UILabel!
@@ -17,7 +19,8 @@ class HospitalsTableViewCell: UITableViewCell {
   @IBOutlet weak var workingDaysLabel: UILabel!
   @IBOutlet weak var workingHoursLabel: UILabel!
   
-  
+  // MARK: - Cell Life Cycle
+
   override func awakeFromNib() {
     super.awakeFromNib()
     // Initialization code
@@ -27,11 +30,7 @@ class HospitalsTableViewCell: UITableViewCell {
     containerView.clipsToBounds = true
   }
   
-  // MARK: - setSelected
-  override func setSelected(_ selected: Bool, animated: Bool) {
-    super.setSelected(selected, animated: animated)
-  }
-  
+
   // MARK: - configureCell
   
   func configureCell(hospital: HospitalModel, isSelected: Bool) {
@@ -43,5 +42,4 @@ class HospitalsTableViewCell: UITableViewCell {
     workingDaysLabel.text = hospital.workingDays
     workingHoursLabel.text = hospital.workingHours
   }
-  
 }

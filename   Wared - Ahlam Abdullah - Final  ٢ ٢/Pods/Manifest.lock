@@ -344,6 +344,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.7):
     - BoringSSL-GRPC/Interface (= 0.0.7)
   - BoringSSL-GRPC/Interface (0.0.7)
+  - DynamicBlurView (4.1.0)
   - Firebase/Analytics (8.10.0):
     - Firebase/Core
   - Firebase/Auth (8.10.0):
@@ -488,6 +489,8 @@ PODS:
     - nanopb/encode (= 2.30908.0)
   - nanopb/decode (2.30908.0)
   - nanopb/encode (2.30908.0)
+  - PopupDialog (1.1.1):
+    - DynamicBlurView (~> 4.0)
   - PromisesObjC (2.0.0)
   - RAMAnimatedTabBarController (5.2.0)
 
@@ -497,12 +500,14 @@ DEPENDENCIES:
   - Firebase/Core
   - Firebase/Firestore
   - Material
+  - PopupDialog
   - RAMAnimatedTabBarController
 
 SPEC REPOS:
   trunk:
     - abseil
     - BoringSSL-GRPC
+    - DynamicBlurView
     - Firebase
     - FirebaseAnalytics
     - FirebaseAuth
@@ -520,12 +525,14 @@ SPEC REPOS:
     - Material
     - Motion
     - nanopb
+    - PopupDialog
     - PromisesObjC
     - RAMAnimatedTabBarController
 
 SPEC CHECKSUMS:
   abseil: 6c8eb7892aefa08d929b39f9bb108e5367e3228f
   BoringSSL-GRPC: 8edf627ee524575e2f8d19d56f068b448eea3879
+  DynamicBlurView: 58e18fae80bb614e34681a4486870e7d257b62e8
   Firebase: 44213362f1dcc52555b935dc925ed35ac55f1b20
   FirebaseAnalytics: 319c9b3b1bdd400d60e2f415dff0c5f6959e6760
   FirebaseAuth: 59a2d2b933b5b79e18fb1e6ad230c6abdaa73d26
@@ -543,9 +550,10 @@ SPEC CHECKSUMS:
   Material: a2a3f400a3b549d53ef89e56c58c4535b29db387
   Motion: cf1e060e489f6661126374d5c60dbd2ed991605c
   nanopb: a0ba3315591a9ae0a16a309ee504766e90db0c96
+  PopupDialog: 720c92befd8bc23c13442254945213db5612f149
   PromisesObjC: 68159ce6952d93e17b2dfe273b8c40907db5ba58
   RAMAnimatedTabBarController: 6863a386e7ae2ab227cd60aa73ab8ff56cdacfdd
 
-PODFILE CHECKSUM: f2b0f73357a05ad1fc42530fd1d6229fc2003723
+PODFILE CHECKSUM: 0708f71d07a08b4373f2641507500853b1caae95
 
 COCOAPODS: 1.11.2

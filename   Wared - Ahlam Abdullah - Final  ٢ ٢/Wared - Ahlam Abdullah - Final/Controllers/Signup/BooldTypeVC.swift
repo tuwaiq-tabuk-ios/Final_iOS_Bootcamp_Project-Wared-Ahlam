@@ -9,17 +9,20 @@ import UIKit
 
 class BooldTypeVC: UIViewController {
   
+  //MARK: - IBOutlets
+  
   @IBOutlet weak var backButton: UIButton!
   
+  
+  // MARK: - View controller Life Cycle
   
   override func viewDidLoad() {
     super.viewDidLoad()
     
-    self.title = ""
     backButton.setTitle("<".Localized(), for: .normal)
   }
   
-  // MARK: - touchesBegan
+  // MARK: - Methods
   
   override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
     self.view.endEditing(true)

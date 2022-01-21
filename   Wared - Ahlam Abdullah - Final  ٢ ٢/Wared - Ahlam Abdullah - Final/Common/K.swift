@@ -30,7 +30,7 @@ struct K {
     static var name = ""
     static var bloodType = ""
     static var email = ""
-    static var donation = ""
+    static var donation = 0
     static  var city = ""
     
   }
@@ -62,7 +62,6 @@ struct K {
     alert.addAction(close)
     
     context.present(alert, animated: true, completion: nil)
-    
   }
   
   

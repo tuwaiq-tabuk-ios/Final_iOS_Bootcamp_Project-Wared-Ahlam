@@ -16,7 +16,7 @@ struct Reservation {
   
   // MARK: - Methods
   
-  func toDic() -> [String : Any] {
+  func toDictionary() -> [String : Any] {
     
     return [
       "userId" : self.userId,

@@ -45,11 +45,11 @@ class ProfileViewController: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func btnLogOutTapped(_ sender: Any) {
+  @IBAction func btnLogOutTapped(_ sender: UIButton) {
     
     try? Auth.auth().signOut()
     let story = UIStoryboard(name: "Main", bundle: nil)
-    if let next = story.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController{
+    if let next = story.instantiateViewController(withIdentifier: "ViewController") as? ViewController {
       next.modalPresentationStyle = .fullScreen
       self.present(next, animated: true, completion: nil)
     }

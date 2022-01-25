@@ -10,7 +10,7 @@ import FirebaseAuth
 import Firebase
 
 
-class BookAppointmentViewController: UIViewController {
+class BookAppointmentVC: UIViewController {
   
   //MARK: - IBOutlets
   
@@ -30,7 +30,7 @@ class BookAppointmentViewController: UIViewController {
   let datePicker = UIDatePicker()
   let timePicker = UIDatePicker()
   
-  var  selectedHospital: HospitalModel = Hospitals().hlist[K.R.hospitalIndex]
+  var  selectedHospital: HospitalStorage = Hospitals().hlist[K.R.hospitalIndex]
   
   // MARK: - View controller Life Cycle
   
@@ -71,9 +71,17 @@ class BookAppointmentViewController: UIViewController {
     //ToolBar
     let toolbar = UIToolbar();
     toolbar.sizeToFit()
-    let doneButton = UIBarButtonItem(title: "Done".Localized(), style: .plain, target: self, action: #selector(donedatePicker));
-    let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-    let cancelButton = UIBarButtonItem(title: "Cancel".Localized(), style: .plain, target: self, action: #selector(cancelDatePicker));
+    let doneButton = UIBarButtonItem(title: "Done".Localized(),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(donedatePicker));
+    let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,                                       target: nil,
+                                      action: nil)
+    let cancelButton = UIBarButtonItem(title: "Cancel".Localized(),
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(cancelDatePicker));
+    
     toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
     selectDateTextField.inputAccessoryView = toolbar
     selectDateTextField.inputView = datePicker
@@ -92,9 +100,17 @@ class BookAppointmentViewController: UIViewController {
     //ToolBar
     let toolbar = UIToolbar();
     toolbar.sizeToFit()
-    let doneButton = UIBarButtonItem(title: "Done".Localized(), style: .plain, target: self, action: #selector(doneTimePicker));
-    let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-    let cancelButton = UIBarButtonItem(title: "Cancel".Localized(), style: .plain, target: self, action: #selector(cancelDatePicker));
+    let doneButton = UIBarButtonItem(title: "Done".Localized(),
+                                     style: .plain,
+                                     target: self,
+                                     action: #selector(doneTimePicker));
+    let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace,                                        target: nil,
+                                      action: nil)
+    let cancelButton = UIBarButtonItem(title: "Cancel".Localized(),
+                                       style: .plain,
+                                       target: self,
+                                       action: #selector(cancelDatePicker));
+    
     toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
     selectTimeTextField.inputAccessoryView = toolbar
     selectTimeTextField.inputView = timePicker
@@ -124,18 +140,37 @@ class BookAppointmentViewController: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func bookButton(_ sender: Any) {
+  @IBAction func bookButton(_ sender: UIButton) {
     
-    guard let time = selectTimeTextField.text, !time.isEmpty else {K.alertShow(title: "Error!".Localized(), Msg: "error in getting Time ".Localized(), context: self); return }
-    guard let date = selectDateTextField.text, !date.isEmpty else {K.alertShow(title: "Error!".Localized(), Msg: "error in getting Date ".Localized(), context: self); return }
-    guard let userId  = Auth.auth().currentUser?.uid,!userId.isEmpty else{K.alertShow(title: "Error!".Localized(), Msg: "error in getting your Data".Localized(), context: self);return}
-    let reservation = Reservation(userId: userId, hospitalName:  selectedHospital.name, date: date, time: time)
+    guard let time = selectTimeTextField.text, !time.isEmpty else {
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "error in getting Time ".Localized(),
+                  context: self); return }
     
-    Firestore.firestore().collection(K.Collections.reservations).document(userId).setData(reservation.toDic()) { dbError in
+    guard let date = selectDateTextField.text, !date.isEmpty else {
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "error in getting Date ".Localized(),
+                  context: self); return }
+    
+    guard let userId  = Auth.auth().currentUser?.uid,!userId.isEmpty else {
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "error in getting your Data".Localized(),
+                  context: self);return}
+    
+    let reservation = Reservation(userId: userId,
+                                  hospitalName:  selectedHospital.name,
+                                  date: date, time: time)
+    
+    Firestore.firestore().collection(K.Collections.reservations).document(userId).setData(reservation.toDictionary()) { dbError in
       if dbError != nil {
-        K.alertShow(title: "Error!".Localized(), Msg: dbError!.localizedDescription , context: self)
-      }else{
-        K.alertShow(title: "success!".Localized(), Msg: "Reservation done Successfully".Localized(), context: self){result,error in
+        K.alertShow(title: "Error!".Localized(),
+                    Msg: dbError!.localizedDescription ,
+                    context: self)
+        
+      } else {
+        K.alertShow(title: "success!".Localized(),
+                    Msg: "Reservation done Successfully".Localized(),
+                    context: self) { result,error in
           
           if !error
           {
@@ -146,8 +181,8 @@ class BookAppointmentViewController: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
                 vc?.modalPresentationStyle = .fullScreen
                 vc?.modalTransitionStyle = .crossDissolve
-                  self.present(vc!, animated: true, completion: nil)
-              
+                self.present(vc!, animated: true, completion: nil)
+                
                 
               }
             }

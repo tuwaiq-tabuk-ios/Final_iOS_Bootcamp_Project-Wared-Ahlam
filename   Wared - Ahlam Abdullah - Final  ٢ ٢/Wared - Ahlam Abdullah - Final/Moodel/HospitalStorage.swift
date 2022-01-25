@@ -7,7 +7,7 @@
 
 import UIKit
 
-struct HospitalModel {
+struct HospitalStorage {
   
   let lat: Double
   let lng: Double

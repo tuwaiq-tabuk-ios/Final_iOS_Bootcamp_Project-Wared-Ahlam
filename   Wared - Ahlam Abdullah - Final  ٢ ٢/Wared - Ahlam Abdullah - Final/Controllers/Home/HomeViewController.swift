@@ -36,8 +36,8 @@ class HomeViewController: UIViewController {
   var userId = "" , donated = 0 , city = "" , bloodType = "" , hospitalName = "" ,date = "" , time = "" , haveAppointment = false
   
   var collectionImagesDate = [UIImage(named: "999")!,
-                         UIImage(named: "1010")!,
-                         UIImage(named: "9090")!]
+                              UIImage(named: "1010")!,
+                              UIImage(named: "9090")!]
   var timer : Timer?
   var cutrrentCellIndex = 0
   
@@ -138,7 +138,7 @@ class HomeViewController: UIViewController {
   
   @objc func moveToNextIndex() {
     
-    if cutrrentCellIndex < collectionImagesDate.count - 1{
+    if cutrrentCellIndex < collectionImagesDate.count - 1 {
       cutrrentCellIndex += 1
       
     } else {
@@ -151,15 +151,12 @@ class HomeViewController: UIViewController {
   }
   
   
-  
-  
   func editReservation() {
     
     let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
-      self.navigationController?.pushViewController(vc!, animated: true)
-      
+    self.navigationController?.pushViewController(vc!, animated: true)
+    
   }
-  
   
   
   func deleteReservation() {
@@ -181,12 +178,14 @@ class HomeViewController: UIViewController {
   
   // MARK: -  @IBAction
   
-
-  @IBAction func didAppointment(_ sender: Any) {
+  
+  @IBAction func didAppointment(_ sender: UIButton) {
     
     if self.haveAppointment
     {
-      K.alertShow(title: "Error!".Localized(), Msg: "Sorry there is already Appoinment".Localized(), context: self)
+      K.alertShow(title: "Error!".Localized(),
+                  Msg: "Sorry there is already Appoinment".Localized(),
+                  context: self)
       
     } else{
       let vc = self.storyboard?.instantiateViewController(withIdentifier: "MapViewController")
@@ -195,7 +194,7 @@ class HomeViewController: UIViewController {
     }
   }
   
-  @IBAction func buttonAction(_ sender: Any) {
+  @IBAction func buttonAction(_ sender: UIButton) {
     // Prepare the popup assets
     
     let message = "Are you sure about canceling the appointment?".Localized()
@@ -209,11 +208,13 @@ class HomeViewController: UIViewController {
     }
     
     // This button will not the dismiss the dialog
-    let buttonTwo = DefaultButton(title: "Edit".Localized(), dismissOnTap: true) {
+    let buttonTwo = DefaultButton(title: "Edit".Localized(),
+                                  dismissOnTap: true) {
       self.editReservation()
     }
     
-    let buttonThree = DefaultButton(title: "Delete".Localized(), height: 60, dismissOnTap: true) {
+    let buttonThree = DefaultButton(title: "Delete".Localized(),
+                                    height: 60, dismissOnTap: true) {
       self.deleteReservation()
     }
     

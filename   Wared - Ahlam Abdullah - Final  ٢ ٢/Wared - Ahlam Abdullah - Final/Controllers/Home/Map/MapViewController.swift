@@ -21,7 +21,7 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
   //The object that you use to start and stop the delivery of location-related events to your app.
   
   let locationManager = CLLocationManager()
-  var selectedHospital:HospitalModel?
+  var selectedHospital:HospitalStorage?
   let myHospitals = Hospitals()
   
   // MARK: - View controller Life Cycle
@@ -117,21 +117,23 @@ class MapViewController: UIViewController ,CLLocationManagerDelegate,MKMapViewDe
   
   // MARK: -  @IBAction
   
-  @IBAction func didSelectHospital(_ sender: Any) {
+  @IBAction func didSelectHospital(_ sender: UIButton) {
     if selectedHospital != nil {
       let story  = UIStoryboard(name: "Main", bundle: nil)
-      if let next = story.instantiateViewController(withIdentifier: "StartCheckingViewController") as? StartCheckingViewController{
+      if let next = story.instantiateViewController(withIdentifier: "StartCheckingViewController") as? StartCheckingVC{
         self.navigationController?.pushViewController(next, animated: false)
       }
     } else {
-      K.alertShow(title: "Error".Localized(), Msg: "Hospital must be selected".Localized(), context: self)
+      K.alertShow(title: "Error".Localized(),
+                  Msg: "Hospital must be selected".Localized(),
+                  context: self)
     }
   }
 }
 
-// MARK: - extension
+// MARK: - extension  Table Data Source
 
-extension MapViewController: UITableViewDataSource, UITableViewDelegate {
+extension MapViewController: UITableViewDataSource  {
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     return self.myHospitals.hlist.count
@@ -142,6 +144,12 @@ extension MapViewController: UITableViewDataSource, UITableViewDelegate {
     cell.configureCell(hospital: self.myHospitals.hlist[indexPath.row], isSelected: self.myHospitals.hlist[indexPath.row].name == selectedHospital?.name)
     return cell
   }
+}
+
+// MARK: - extension  Table Delegate
+
+extension MapViewController: UITableViewDelegate {
+  
   
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     self.selectedHospital = self.myHospitals.hlist[indexPath.row]
@@ -155,5 +163,6 @@ extension MapViewController: UITableViewDataSource, UITableViewDelegate {
   }
   
 }
+
 
 

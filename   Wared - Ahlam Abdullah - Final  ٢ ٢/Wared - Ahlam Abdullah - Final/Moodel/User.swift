@@ -63,7 +63,7 @@ class User {
   
   // MARK: - Methods
   
-  func toDic() -> [String : Any] {
+  func toDictionary() -> [String : Any] {
     
     var myDic = [String:Any]()
     myDic["userId"] = self.userId

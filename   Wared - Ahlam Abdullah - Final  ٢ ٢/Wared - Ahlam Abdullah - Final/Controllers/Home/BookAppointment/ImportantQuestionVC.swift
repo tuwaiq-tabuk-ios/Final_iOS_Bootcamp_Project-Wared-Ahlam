@@ -37,7 +37,7 @@ class ImportantQuestionVC: UIViewController {
     noButton.clipsToBounds = true
     getCurrentQuestion()
     
-    yesButton.setTitle("Yas".Localized(), for: .normal)
+    yesButton.setTitle("Yes".Localized(), for: .normal)
     noButton.setTitle("No".Localized(), for: .normal)
     
   }
@@ -64,7 +64,7 @@ class ImportantQuestionVC: UIViewController {
         
       } else {
         
-        if let next = story.instantiateViewController(withIdentifier: "BookAppointmentViewController") as? BookAppointmentViewController{
+        if let next = story.instantiateViewController(withIdentifier: "BookAppointmentViewController") as? BookAppointmentVC{
           self.navigationController?.pushViewController(next, animated: false)
         }
       }

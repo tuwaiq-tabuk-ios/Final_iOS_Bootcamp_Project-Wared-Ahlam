@@ -33,7 +33,7 @@ class SelectWeightVC: UIViewController {
   
   // MARK: -  @IBAction
   
-  @IBAction func backButton(_ sender: Any) {
+  @IBAction func backButton(_ sender: UIButton) {
     dismiss(animated: true, completion: nil)
   }
   
@@ -52,15 +52,20 @@ class SelectWeightVC: UIViewController {
   }
   
   
-  @IBAction func registerButton(_ sender: Any) {
+  @IBAction func registerButton(_ sender: UIButton) {
+    
     if SignupDataModel.weight.isEmpty {
-      K.alertShow(title: "Error".Localized(), Msg: "You have to choose the weight".Localized(), context: self)
+      K.alertShow(title: "Error".Localized(),
+                  Msg: "You have to choose the weight".Localized(),
+                  context: self)
       return
     }
     
     Auth.auth().createUser(withEmail: SignupDataModel.email, password: SignupDataModel.password) { (result, error) in
       if error != nil {
-        K.alertShow(title: "Error!".Localized(), Msg: error.debugDescription, context: self)
+        K.alertShow(title: "Error!".Localized(),
+                    Msg: error.debugDescription,
+                    context: self)
         
       } else {
         
@@ -76,9 +81,11 @@ class SelectWeightVC: UIViewController {
                         weight: SignupDataModel.weight,
                         donated: 0)
         
-        db.collection("users").document("\(result!.user.uid)").setData(user.toDic()) { (error) in
+        db.collection("users").document("\(result!.user.uid)").setData(user.toDictionary()) { (error) in
           if error != nil {
-            K.alertShow(title: "Error!", Msg: error.debugDescription, context: self)
+            K.alertShow(title: "Error!",
+                        Msg: error.debugDescription,
+                        context: self)
           } else {
             let vc = self.storyboard?.instantiateViewController(withIdentifier: "HomeVC")
             vc?.modalPresentationStyle = .fullScreen
